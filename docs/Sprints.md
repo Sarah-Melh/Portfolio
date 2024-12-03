@@ -13,7 +13,6 @@
 - HTML de la navbar et du footer :
     - liens 
     - insertion du logo
-    - création du burger
 - Carte du texte de présentation
 - Cartes des compétences avec checkbox
 - Boutons pour faire apparaître les cartes de compétences
