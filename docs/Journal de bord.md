@@ -104,6 +104,26 @@ Résolu facilement.
 
 ### A revoir (si il y a du temps)
 
+## Sprint 7: Style général
+### Ce que je prévois
+- Création des feuilles SCSS font, colors, mixins
+- Couleurs du background header et footer
+- Couleurs du background du body
+- Insertion de l'image de fond
+- Harmonisation des polices et des images
+- Stylisation des boutons
+- Stylisation des cartes
+
+### annotation 
+- l'ordre des sprints ne correspond pas à la procédure nécessaire 
+pour un future navigation correcte.
+- revoir l'odre des sprints pour faciliter le travail
+### Ce qui a été
+
+
+### Ce qui s'est mal passé
+
+### A revoir (si il y a du temps)
 
 ## Git
 - 

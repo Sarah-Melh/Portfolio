@@ -38,6 +38,11 @@
 - Report du header et du footer
 - Carte des mentions légales
 
+## Sprint A:
+- Révision des priorités de la gestion de projet
+- Construction du système de navigation 
+- Travail sur le système d'affichage
+
 ## Sprint 7 : Style général
 - Création des feuilles SCSS font, colors, mixins
 - Couleurs du background header et footer
@@ -61,7 +66,6 @@
 ## Sprint 10 : JS 
 - Général
     - Mise en place du menu dynamique
-    - Burger menu
 - Page d'accueil
     - Toggle in et out des boutons des compétences (jQuery?)
 - Page "réalisations"
