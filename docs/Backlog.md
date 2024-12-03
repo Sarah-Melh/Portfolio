@@ -10,12 +10,12 @@
 | ID | Mise en place des Sprints           | Priorité | Fait | Sprint 1 |Sarah |
 | ID | Début du README                     | Priorité | Fait | Sprint 1 |Sarah |
 | ID | Initialisation git hub              | Priorité | Fait | Sprint 1 |Sarah |
-| ID | HTML-Page d'accueil                 | Priorité | Statut | Sprint 2 |Sarah |
-| ID | HTML-Header (navbar) et footer      | Priorité | Statut | Sprint 2 |Sarah |
-| ID | HTML-Contenu page d'accueil         | Priorité | Statut | Sprint 2 |Sarah |
-| ID | HTML-Contenu "réalisation"          | Priorité | Statut | Sprint 3 |Sarah |
-| ID | Liens git des projet                | Basse | Statut | Sprint 3 |Sarah |
-| ID | HTML-Contenu "CV"                   | Priorité | Statut | Sprint 4 |Sarah |
+| ID | HTML-Page d'accueil                 | Priorité | Fait | Sprint 2 |Sarah |
+| ID | HTML-Header (navbar) et footer      | Priorité | Fait | Sprint 2 |Sarah |
+| ID | HTML-Contenu page d'accueil         | Priorité | Fait | Sprint 2 |Sarah |
+| ID | HTML-Contenu "réalisation"          | Priorité | Fait | Sprint 3 |Sarah |
+| ID | Liens git des projet                | Basse    | Statut | Sprint 3 |Sarah |
+| ID | HTML-Contenu "CV"                   | Priorité | Fait | Sprint 4 |Sarah |
 | ID | HTML-Page "contact"                 | Priorité | Statut | Sprint 5 |Sarah |
 | ID | HTML-Page "mentions légales"        | Priorité | Statut | Sprint 6 |Sarah |
 | ID | SCSS-Stylisation générale du site   | Priorité | Statut | Sprint 7|Sarah |
