@@ -27,8 +27,8 @@
     - mettre les liens git hub dans la description
 
 ## Sprint 4 : Page "CV"
-- Cartes du CV
-AJOUTER DETAILS QUAND CV FAIT
+- Carte du CV
+- Insertion de l'image du CV
 
 ## Sprint 5 : Page "contact"
 - Report du header et du footer
@@ -51,6 +51,7 @@ AJOUTER DETAILS QUAND CV FAIT
 - Création des animations en SCSS:
     - apparition de l'image de fond
     - apparition des cartes
+- Création des slides shows
 
 ## Sprint 9 : Responsive
 - Utiliser bootstrap pour les rows et colonnes

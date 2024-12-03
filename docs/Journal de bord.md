@@ -46,43 +46,42 @@ Résolu facilement.
 -----
 ## Sprint 3: Page "réalisations"
 ### Ce que je prévois
-- - Cartes des projets:
+- Cartes des projets:
     - insertion des images
     - textes de présentation
     - slide show si nécessaire
 ### Ce qui a été
-- 
+- La création de cartes
+- l'insertion des images
 
 ### Ce qui s'est mal passé
-- 
+- Le slide show se fera en scss
 
-### A revoir si il y a du temps
+### A revoir (si il y a du temps)
+- Insérer les textes de présentation
 - faire des dépôts git de certains projets
 - mettre les liens git hub dans la description
 
 -------
 -----
-## Sprint 4
+## Sprint 4 : Page "CV"
 ### Ce que je prévois
-- 
+- Carte du CV
+- Insertion de l'image du CV
 
 ### Ce qui a été
-- 
+- Aucun problème sur cette phase
+- ajout d'une petite carte de texte
 
 ### Ce qui s'est mal passé
 - 
 
-### A améliorer
-- 
-
 -------
 -----
-## Sprint 5
+## Sprint 5 : Page "contact"
 ### Ce que je prévois
-- 
-
-***Commentaire personnel*** :  
-
+- Report du header et du footer
+- Formulaire de contact en HTML
 
 ### Ce qui a été
 - 
@@ -91,10 +90,19 @@ Résolu facilement.
 ### Ce qui s'est mal passé
 - 
 
+---------------------
+-------------------
 
+## Sprint 6: Page "mentions légales"
+### Ce que je prévois
+- Report du header et du footer
+- Carte des mentions légales
 
-***Commentaire personnel*** :  
-*
+### Ce qui a été
+
+### Ce qui s'est mal passé
+
+### A revoir (si il y a du temps)
 
 
 ## Git
