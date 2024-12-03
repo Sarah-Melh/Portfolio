@@ -43,6 +43,7 @@
     - revoir l'ordre des sprints et, si besoin leur contenu
 - Construction du système de navigation 
     - gérer l'affichage dynamique des pages en html et js
+    -> Sprint 7
 - Travail sur le système d'affichage
     - préparer la structure de base pour un affichage dynamique des contenus
 
@@ -50,7 +51,7 @@
 - Général
     - Mise en place du menu dynamique
 - Page d'accueil
-    - Toggle in et out des boutons des compétences (jQuery?)
+    - fonction de sélection de la carte voulue
 - Page "réalisations"
     - Boutons de slide show
 - Page formulaire de contact
