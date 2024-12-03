@@ -114,8 +114,12 @@ Résolu facilement.
 - Stylisation des boutons
 - Stylisation des cartes
 
+### annotation 
+- l'ordre des sprints ne correspond pas à la procédure nécessaire 
+pour un future navigation correcte.
+- revoir l'odre des sprints pour faciliter le travail
 ### Ce qui a été
--aucun problème
+
 
 ### Ce qui s'est mal passé
 
