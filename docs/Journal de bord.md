@@ -84,8 +84,7 @@ Résolu facilement.
 - Formulaire de contact en HTML
 
 ### Ce qui a été
-- 
--
+- aucun problème
 
 ### Ce qui s'est mal passé
 - 
