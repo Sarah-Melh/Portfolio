@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/zoning.css">
     <link rel="stylesheet" href="js/frameworks/fontawesome.min.css">
@@ -19,7 +19,7 @@
     <!-- header -->
     <header>
         <div>
-            <img src="assets/logo/Logo.png" alt="logo du site">
+            <img id="logo-site" src="assets/logo/Logo.png" alt="logo du site">
             <a href="#">Accueil</a>
             <a href="#">Réalisations</a>
             <a href="#">Parours</a>
@@ -34,15 +34,15 @@
             <h1>Sarah Melhaa</h1>
             <div class="card-general">
                 <h3 class="card-title">A propos de moi</h3>
-                <blockquote>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae non velit magnam minima 
-                    cupiditate voluptates dolores perspiciatis esse nemo repellat reiciendis nesciunt ab sed in labore, 
+                <blockquote class="info-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae non velit magnam minima
+                    cupiditate voluptates dolores perspiciatis esse nemo repellat reiciendis nesciunt ab sed in labore,
                     ratione voluptatum provident nam, numquam soluta ipsa vitae? Maxime?
                 </blockquote>
             </div>
         </Section>
         <section>
-            <h2>J'ai pas encore de titre</h2>
+            <h2>Mes compétances en développement</h2>
             <form action="">
                 <select name="" id="">
                     <option value="">--</option>
@@ -54,8 +54,8 @@
                 </select>
                 <button id="comp-btn" class="btn">Envoyer</button>
             </form>
-            <div class="card-general">
-            <h3>HTML</h3>
+            <div class="card-general card-comp">
+                <h3>HTML</h3>
                 <input class="checkbox" type="checkbox">
                 <label class="comp-label">A acquérir</label>
                 <input class="checkbox" type="checkbox">
@@ -65,50 +65,181 @@
                 <input class="checkbox" type="checkbox">
                 <label class="comp-label">Maîtrisé</label>
             </div>
-            <div class="card-general">
+            <div class="card-general card-comp">
                 <h3>CSS & SCSS</h3>
-                    <input class="checkbox" type="checkbox">
-                    <label class="comp-label">A acquérir</label>
-                    <input class="checkbox" type="checkbox">
-                    <label class="comp-label">En cours d'acquisition</label>
-                    <input class="checkbox" type="checkbox">
-                    <label class="comp-label">Acquis</label>
-                    <input class="checkbox" type="checkbox">
-                    <label class="comp-label">Maîtrisé</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">A acquérir</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">En cours d'acquisition</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">Acquis</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">Maîtrisé</label>
+            </div>
+            <div class="card-general card-comp">
+                <h3>Bootstrap</h3>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">A acquérir</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">En cours d'acquisition</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">Acquis</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">Maîtrisé</label>
+            </div>
+            <div class="card-general card-comp">
+                <h3>Javascript</h3>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">A acquérir</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">En cours d'acquisition</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">Acquis</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">Maîtrisé</label>
+            </div>
+            <div class="card-general card-comp">
+                <h3>php</h3>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">A acquérir</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">En cours d'acquisition</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">Acquis</label>
+                <input class="checkbox" type="checkbox">
+                <label class="comp-label">Maîtrisé</label>
+            </div>
+        </section>
+        <!-- réalisations -->
+        <section>
+            <h2>Mes réalisations</h2>
+            <div class="card-general card-real">
+                <h3>Première maquette</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/proto_accueil.png" alt="page accueil">
+                    <img class="slide-img" src="assets/imgs/proto_contact.png" alt="page contact">
+                    <img class="slide-img" src="assets/imgs/proto_catalog.png" alt="administration catalogue">
+                    <img class="slide-img" src="assets/imgs/proto_form.png" alt="formulaire ajout oeuvre">
+                    <!-- créer le slideshow et ajouter les boutons de slide -->
                 </div>
-                <div class="card-general">
-                    <h3>Bootstrap</h3>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">A acquérir</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">En cours d'acquisition</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">Acquis</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">Maîtrisé</label>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+            <div class="card-general card-real">
+                <h3>Projet Afpa</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/afpa1.png" alt="page accueil">
+                    <img class="slide-img" src="assets/imgs/afpa2.png" alt="description formation">
+                    <img class="slide-img" src="assets/imgs/afpa3.png" alt="témoignages">
+                    <img class="slide-img" src="assets/imgs/afpa4.png" alt="partenaires">
+                    <img class="slide-img" src="assets/imgs/afpa5.png" alt="contact">
+                    <!-- créer le slideshow et ajouter les boutons de slide -->
                 </div>
-                <div class="card-general">
-                    <h3>Javascript</h3>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">A acquérir</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">En cours d'acquisition</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">Acquis</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">Maîtrisé</label>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+            <div class="card-general card-real">
+                <h3>Shoesplash</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/shoe1.png" alt="haut de page">
+                    <img class="slide-img" src="assets/imgs/shoe2.png" alt="selection articles">
+                    <img class="slide-img" src="assets/imgs/shoe3.png" alt="bas de page">
+                    <!-- créer le slideshow et ajouter les boutons de slide -->
                 </div>
-                <div class="card-general">
-                    <h3>php</h3>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">A acquérir</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">En cours d'acquisition</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">Acquis</label>
-                        <input class="checkbox" type="checkbox">
-                        <label class="comp-label">Maîtrisé</label>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+            <div class="card-general card-real">
+                <h3>AC/DC</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/ac-dc1.png" alt="haut de page">
+                    <img class="slide-img" src="assets/imgs/ac-dc2.png" alt="albums">
+                    <img class="slide-img" src="assets/imgs/ac-dc3.png" alt="bas de page">
+                    <!-- créer le slideshow et ajouter les boutons de slide -->
                 </div>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+            <div class="card-general card-real">
+                <h3>Zorglub Services</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/Zorglub_accueil.png" alt="page d'accueil">
+                    <img class="slide-img" src="assets/imgs/Zorglub_assurancepng.png" alt="assurance auto">
+                    <img class="slide-img" src="assets/imgs/Zorglub_monnaie.png" alt="rendu de monnaie">
+                    <!-- créer le slideshow et ajouter les boutons de slide -->
+                </div>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+            <div class="card-general card-real">
+                <h3>Avenger</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/avenger.png" alt="realisation avenger">
+                </div>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+            <div class="card-general card-real">
+                <h3>Choco Boom</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/choco_boom.png" alt="realisation choco_boom">
+                </div>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+            <div class="card-general card-real">
+                <h3>Please, like me</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/like_me.png" alt="haut de page">
+                </div>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+            <div class="card-general card-real">
+                <h3>Bibliothèque</h3>
+                <div class="slide">
+                    <img class="slide-img" src="assets/imgs/livres.png" alt="liste livres">
+                </div>
+                <blockquote class="info-text real-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloribus fuga eius qui deleniti! Doloremque dolores aut, perferendis
+                    possimus magni nesciunt illo cupiditate obcaecati illum ipsa dolore vitae quam
+                    numquam dignissimos porro voluptas voluptate, est fugiat?
+                </blockquote>
+            </div>
+
         </section>
 
     </main>

@@ -3,3 +3,13 @@
 @use '_fonts.scss' as f;
 @use '_extend.scss';
 @use '_mixins.scss' as m;
+
+// provisoire pour avoir des images plus petites durant le dev
+img {
+    width: 20em;
+    height: auto;
+}
+#logo-site {
+    width: 10em;
+    height: auto;
+}
