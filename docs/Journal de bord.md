@@ -1,33 +1,35 @@
 # Journal de bord
 
-## Sprint 1
+## Sprint 1 : Organisation du projet
 ### Ce que je prévois
-<u>Header</u>
-- 
-
-<u>Dans le main</u>
-- 
-
-<u>Footer</u>
-- 
+- Création des user-stories
+- Création du backlog
+- Wireframe et prototype
+- Réunir le matériel graphique pour le projet
+- Mise en place des Sprints
+- Début du README
+- Initialisation git hub
 
 ### Ce qui a été
-- 
-
+- Dans l'ensemble tout s'est bien passé.
 
 ### Ce qui s'est mal passé
-- 
--
+- Un de difficulté pour intégrer les fichier dans le projet
+sur github. Résolu assez facilement.
 
-### A revoir si il y a du temps
-- 
 
 -------
 -----
 
-## Sprint 2
+## Sprint 2 : Page d'accueil
 ### Ce que je prévois
-- 
+- HTML de la navbar et du footer :
+    - liens 
+    - insertion du logo
+    - création du burger
+- Carte du texte de présentation
+- Cartes des compétences avec checkbox
+- Boutons pour faire apparaître les cartes de compétences
 
 ### Ce qui a été
 - 

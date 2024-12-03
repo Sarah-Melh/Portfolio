@@ -11,7 +11,7 @@
 
 ## Sprint 2 : Page d'accueil
 - HTML de la navbar et du footer :
-    - liens (dynamiques ou classiques)
+    - liens 
     - insertion du logo
     - création du burger
 - Carte du texte de présentation
@@ -19,7 +19,6 @@
 - Boutons pour faire apparaître les cartes de compétences
 
 ## Sprint 3 : Page "réalisations"
-- Report du header et du footer
 - Cartes des projets:
     - insertion des images
     - textes de présentation
@@ -29,7 +28,6 @@
     - mettre les liens git hub dans la description
 
 ## Sprint 4 : Page "CV"
-- Report du header et du footer
 - Cartes du CV
 AJOUTER DETAILS QUAND CV FAIT
 
