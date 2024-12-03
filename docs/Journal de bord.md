@@ -98,6 +98,7 @@ Résolu facilement.
 - Carte des mentions légales
 
 ### Ce qui a été
+-aucun problème
 
 ### Ce qui s'est mal passé
 

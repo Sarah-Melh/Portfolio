@@ -16,8 +16,8 @@
 | ID | HTML-Contenu "réalisation"          | Priorité | Fait | Sprint 3 |Sarah |
 | ID | Liens git des projet                | Basse    | Statut | Sprint 3 |Sarah |
 | ID | HTML-Contenu "CV"                   | Priorité | Fait | Sprint 4 |Sarah |
-| ID | HTML-Page "contact"                 | Priorité | Statut | Sprint 5 |Sarah |
-| ID | HTML-Page "mentions légales"        | Priorité | Statut | Sprint 6 |Sarah |
+| ID | HTML-Page "contact"                 | Priorité | Fait | Sprint 5 |Sarah |
+| ID | HTML-Page "mentions légales"        | Priorité | Fait | Sprint 6 |Sarah |
 | ID | SCSS-Stylisation générale du site   | Priorité | Statut | Sprint 7|Sarah |
 | ID | SCSS-Animations                     | Priorité | Statut | Sprint 8 |Sarah |
 | ID | Responsive                          | Priorité | Statut | Sprint 9 |Sarah |
