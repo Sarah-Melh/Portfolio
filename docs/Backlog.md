@@ -5,11 +5,11 @@
 |----|-------------------------------------|----------|--------|--------|-----------|
 | ID | Création des user-stories           | Priorité | Fait | Sprint 1 |Sarah |
 | ID | Création du backlog                 | Priorité | Fait | Sprint 1 |Sarah |
-| ID | Wireframe et prototype              | Priorité | En cours | Sprint 1 |Sarah |
-| ID | Réunir le matériel graphique        | Priorité | En cours | Sprint 1 |Sarah |
-| ID | Mise en place des Sprints           | Priorité | En cours | Sprint 1 |Sarah |
-| ID | Début du README                     | Priorité | Statut | Sprint 1 |Sarah |
-| ID | Initialisation git hub              | Priorité | Statut | Sprint 1 |Sarah |
+| ID | Wireframe et prototype              | Priorité | Fait | Sprint 1 |Sarah |
+| ID | Réunir le matériel graphique        | Priorité | Fait | Sprint 1 |Sarah |
+| ID | Mise en place des Sprints           | Priorité | Fait | Sprint 1 |Sarah |
+| ID | Début du README                     | Priorité | Fait | Sprint 1 |Sarah |
+| ID | Initialisation git hub              | Priorité | Fait | Sprint 1 |Sarah |
 | ID | HTML-Page d'accueil                 | Priorité | Statut | Sprint 2 |Sarah |
 | ID | HTML-Header (navbar) et footer      | Priorité | Statut | Sprint 2 |Sarah |
 | ID | HTML-Contenu page d'accueil         | Priorité | Statut | Sprint 2 |Sarah |
