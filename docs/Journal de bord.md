@@ -51,20 +51,23 @@ Résolu facilement.
     - textes de présentation
     - slide show si nécessaire
 ### Ce qui a été
-- 
+- La création de cartes
+- l'insertion des images
 
 ### Ce qui s'est mal passé
-- 
+- Le slide show se fera en scss
 
-### A revoir si il y a du temps
+### A revoir (si il y a du temps)
+- Insérer les textes de présentation
 - faire des dépôts git de certains projets
 - mettre les liens git hub dans la description
 
 -------
 -----
-## Sprint 4
+## Sprint 4 : Page "CV"
 ### Ce que je prévois
-- 
+- Carte du CV
+- Insertion de l'image du CV
 
 ### Ce qui a été
 - 
