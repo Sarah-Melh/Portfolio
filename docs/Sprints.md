@@ -38,12 +38,33 @@
 - Report du header et du footer
 - Carte des mentions légales
 
-## Sprint A:
+## Sprint A :
 - Révision des priorités de la gestion de projet
+    - revoir l'ordre des sprints et, si besoin leur contenu
 - Construction du système de navigation 
+    - gérer l'affichage dynamique des pages en html et js
+    -> Sprint 7
 - Travail sur le système d'affichage
+    - préparer la structure de base pour un affichage dynamique des contenus
 
-## Sprint 7 : Style général
+## Sprint 7 : JS 
+- Général
+    - Mise en place du menu dynamique
+- Page d'accueil
+    - fonction de sélection de la carte voulue
+- Page "réalisations"
+    - Boutons de slide show
+- Page formulaire de contact
+    - Vérification des contenus des champs du formulaire
+    - Vérification de la validité de saisie de l'email
+    - Bouton submit de la page contact
+
+## Sprint 8 : Responsive
+- Utiliser bootstrap pour les rows et colonnes
+    (attention à la classe card!)
+- Si besoin: media queries en scss
+
+## Sprint 9 : Style général
 - Création des feuilles SCSS font, colors, mixins
 - Couleurs du background header et footer
 - Couleurs du background du body
@@ -52,34 +73,21 @@
 - Stylisation des boutons
 - Stylisation des cartes
 
-## Sprint 8 : Style 
+## Sprint 10 : Style 
 - Création des animations en SCSS:
     - apparition de l'image de fond
     - apparition des cartes
 - Création des slides shows
 
-## Sprint 9 : Responsive
-- Utiliser bootstrap pour les rows et colonnes
-    (attention à la classe card!)
-- Si besoin: media queries en scss
-
-## Sprint 10 : JS 
-- Général
-    - Mise en place du menu dynamique
-- Page d'accueil
-    - Toggle in et out des boutons des compétences (jQuery?)
-- Page "réalisations"
-    - Boutons de slide show
-- Page formulaire de contact
-    - Vérification des contenus des champs du formulaire
-    - Vérification de la validité de saisie de l'email
-    - Bouton submit de la page contact
-
 ## Sprint 11 : Accessibilité
 - Ajout de la balise ARIA
 - Vérification du contraste des couleurs
 
-## Sprint 12 : Vérification
+## Sprint 12 : Ajouts
+- Toute action notée comme devant être faite lors des retours
+sur les sprints précédents
+
+## Sprint 13 : Vérification
 - Vérification du code HTML
 - Vérification du code SCSS
 - Vérification du code JS

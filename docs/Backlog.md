@@ -30,3 +30,6 @@
 | ID | Vérification du code                | Priorité | Statut | Sprint 12 |Sarah |
 | ID | Vérification du responsive          | Priorité | Statut | Sprint 12 |Sarah |
 | ID | Ajustements si nécessaire           | Priorité | Statut | Sprint 12 |Sarah |
+| ID | Réorganisation de la gestion de projet  | Haute | Statut | Sprint A |Sarah |
+| ID | Construction du système de navigation   | Haute | Statut | Sprint A |Sarah |
+| ID | Tavail sur le système d'afichage        | Haute | Statut | Sprint A |Sarah |

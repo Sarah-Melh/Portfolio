@@ -114,16 +114,20 @@ Résolu facilement.
 - Stylisation des boutons
 - Stylisation des cartes
 
-### annotation 
+### Annotation 
 - l'ordre des sprints ne correspond pas à la procédure nécessaire 
 pour un future navigation correcte.
 - revoir l'odre des sprints pour faciliter le travail
-### Ce qui a été
 
 
-### Ce qui s'est mal passé
-
-### A revoir (si il y a du temps)
+## Sprint A : réorientation
+### Ce que je prévois
+- Révision des priorités de la gestion de projet
+    - revoir l'ordre des sprints et, si besoin, leur contenu
+- Construction du système de navigation 
+    - gérer l'affichage dynamique des pages en html et js
+- Travail sur le système d'affichage
+    - préparer la structure de base pour un affichage dynamique des contenus
 
 ## Git
 - 
