@@ -7,10 +7,9 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/zoning.css">
-    <link rel="stylesheet" href="js/frameworks/fontawesome.min.css">
-    <link rel="stylesheet" href="js/frameworks/bootstrap.min.css">
-    <link rel="stylesheet" href="js/frameworks/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/frameworks/fontawesome.min.css">
+    <link rel="stylesheet" href="css/frameworks/bootstrap.min.css">
     <script src="js/frameworks/vue.global.prod.js"></script>
     <script src="js/frameworks/jquery.min.js"></script>
 </head>
@@ -20,9 +19,9 @@
     <header>
         <div>
             <img id="logo-site" src="assets/logo/Logo.png" alt="logo du site">
-            <a href="#">Accueil</a>
-            <a href="#">Réalisations</a>
-            <a href="#">Parours</a>
+            <a href="#" class="dynamic" id="hello" data-link="welcome">Accueil</a>
+            <a href="#" class="dynamic" id="real" data-link="projects">Réalisations</a>
+            <a href="#" class="dynamic" id="road" data-link="resume">Parours</a>
             <a href="includes/contacts.html">Contact</a>
         </div>
     </header>
@@ -30,7 +29,7 @@
     <!-- main -->
     <main class="container">
         <!-- accueil -->
-        <Section>
+        <section class="display-page" id="welcome">
             <h1>Sarah Melhaa</h1>
             <div class="card-general">
                 <h3 class="card-title">A propos de moi</h3>
@@ -40,34 +39,34 @@
                     ratione voluptatum provident nam, numquam soluta ipsa vitae? Maxime?
                 </blockquote>
             </div>
-        </Section>
-        <section>
-            <h2>Mes compétences en développement</h2>
-            <form action="">
-                <select name="" id="">
-                    <option value="">--</option>
-                    <option value="">HTML</option>
-                    <option value="">CSS & SCSS</option>
-                    <option value="">Bootstrap</option>
-                    <option value="">Javascript</option>
-                    <option value="">php</option>
-                </select>
-                <button id="comp-btn" class="btn">Envoyer</button>
-            </form>
-            <div class="card-general card-comp">
-                <h3>HTML</h3>
-                <input class="checkbox" type="checkbox">
-                <label class="comp-label">A acquérir</label>
-                <input class="checkbox" type="checkbox">
-                <label class="comp-label">En cours d'acquisition</label>
-                <input class="checkbox" type="checkbox">
-                <label class="comp-label">Acquis</label>
-                <input class="checkbox" type="checkbox">
-                <label class="comp-label">Maîtrisé</label>
+            <div>
+                <h2>Mes compétences en développement</h2>
+                <form action="">
+                    <select name="" id="">
+                        <option value="">--</option>
+                        <option value="">HTML</option>
+                        <option value="">CSS & SCSS</option>
+                        <option value="">Bootstrap</option>
+                        <option value="">Javascript</option>
+                        <option value="">php</option>
+                    </select>
+                    <button id="comp-btn" class="btn">Envoyer</button>
+                </form>
+                <div class="card-general card-comp">
+                    <h3>HTML</h3>
+                    <input class="checkbox" type="checkbox">
+                    <label class="comp-label">A acquérir</label>
+                    <input class="checkbox" type="checkbox">
+                    <label class="comp-label">En cours d'acquisition</label>
+                    <input class="checkbox" type="checkbox">
+                    <label class="comp-label">Acquis</label>
+                    <input class="checkbox" type="checkbox">
+                    <label class="comp-label">Maîtrisé</label>
+                </div>
             </div>
         </section>
         <!-- réalisations -->
-        <section>
+        <section class="display-page" id="projects">
             <h2>Mes réalisations</h2>
             <div class="card-general card-real d-grid col-3">
                 <h3>Bibliothèque</h3>
@@ -83,7 +82,7 @@
             </div>
         </section>
         <!-- CV -->
-        <section>
+        <section class="display-page" id="resume">
             <h2>Mon Parcours</h2>
             <div class="card-general card-resume">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ad optio

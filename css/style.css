@@ -20,6 +20,13 @@ img {
   height: auto;
 }
 
+#welcome {
+  display: block;
+}
+
+#resume, #projects {
+  display: none;
+} /*faire un extend*/
 html body {
   font-family: "Merienda";
 }
