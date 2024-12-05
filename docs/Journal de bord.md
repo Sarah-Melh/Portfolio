@@ -129,6 +129,23 @@ pour un future navigation correcte.
 - Travail sur le système d'affichage
     - préparer la structure de base pour un affichage dynamique des contenus
 
-## Git
-- 
-- 
+## Sprint 7 : JS 
+### Ce que je prévois
+- Général
+    - Mise en place du menu dynamique
+    - relier les pages indépendantes
+- Page d'accueil
+    - fonction de sélection de la carte voulue
+- Page "réalisations"
+    - Boutons de slide show
+- Page formulaire de contact
+    - Vérification des contenus des champs du formulaire
+    - Vérification de la validité de saisie de l'email
+    - Bouton submit de la page contact
+
+### Ce qui a été
+- les idées pour les liens sont venues assez rapidement
+
+### Ce qui s'est mal passé
+- créer les fonctions pour les liens dynamiques et
+les liens depuis les pages indépendantes
