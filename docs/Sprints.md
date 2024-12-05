@@ -50,6 +50,7 @@
 ## Sprint 7 : JS 
 - Général
     - Mise en place du menu dynamique
+    - relier les pages indépendantes
 - Page d'accueil
     - fonction de sélection de la carte voulue
 - Page "réalisations"

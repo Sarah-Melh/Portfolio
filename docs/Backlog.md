@@ -18,18 +18,21 @@
 | ID | HTML-Contenu "CV"                   | Priorité | Fait | Sprint 4 |Sarah |
 | ID | HTML-Page "contact"                 | Priorité | Fait | Sprint 5 |Sarah |
 | ID | HTML-Page "mentions légales"        | Priorité | Fait | Sprint 6 |Sarah |
-| ID | SCSS-Stylisation générale du site   | Priorité | Statut | Sprint 7|Sarah |
-| ID | SCSS-Animations                     | Priorité | Statut | Sprint 8 |Sarah |
-| ID | Responsive                          | Priorité | Statut | Sprint 9 |Sarah |
-| ID | JS-Mise en place du menu dynamique  | Priorité | Statut | Sprint 10 |Sarah |
-| ID | JS-Vérification de l'email          | Priorité | Statut | Sprint 10 |Sarah |
-| ID | JS-Vérification du formulaire       | Priorité | Statut | Sprint 10 |Sarah |
-| ID | JS-Actions des boutons              | Priorité | Statut | Sprint 10 |Sarah |
+| ID | relier les pages indépendantes      | Priorité | En cours | Sprint 7|Sarah |
+| ID | Mise en place du menu dynamique     | Priorité | En cours | Sprint 7|Sarah |
+| ID | JS-Mise en place du menu dynamique  | Priorité | Statut | Sprint 7 |Sarah |
+| ID | JS-Vérification de l'email          | Priorité | Statut | Sprint 7 |Sarah |
+| ID | JS-Vérification du formulaire       | Priorité | Statut | Sprint 7 |Sarah |
+| ID | JS-Actions des boutons              | Priorité | Statut | Sprint 7 |Sarah |
+| ID | Responsive                          | Priorité | Statut | Sprint 8 |Sarah |
+| ID | SCSS-Stylisation générale du site   | Priorité | Statut | Sprint 9|Sarah |
+| ID | SCSS-Animations                     | Priorité | Statut | Sprint 10 |Sarah |
 | ID | Ajout de la balise ARIA             | Priorité | Statut | Sprint 11 |Sarah |
 | ID | Vérification contraste              | Priorité | Statut | Sprint 11 |Sarah |
-| ID | Vérification du code                | Priorité | Statut | Sprint 12 |Sarah |
-| ID | Vérification du responsive          | Priorité | Statut | Sprint 12 |Sarah |
-| ID | Ajustements si nécessaire           | Priorité | Statut | Sprint 12 |Sarah |
-| ID | Réorganisation de la gestion de projet  | Haute | Statut | Sprint A |Sarah |
-| ID | Construction du système de navigation   | Haute | Statut | Sprint A |Sarah |
-| ID | Tavail sur le système d'afichage        | Haute | Statut | Sprint A |Sarah |
+| ID | Ajouts (si besoin)                  | Basse | Statut | Sprint 12 |Sarah |
+| ID | Vérification du code                | Priorité | Statut | Sprint 13 |Sarah |
+| ID | Vérification du responsive          | Priorité | Statut | Sprint 13 |Sarah |
+| ID | Ajustements si nécessaire           | Priorité | Statut | Sprint 13 |Sarah |
+| ID | Réorganisation de la gestion de projet  | Haute | Fait | Sprint A |Sarah |
+| ID | Construction du système de navigation   | Haute | Fait | Sprint A |Sarah |
+| ID | Tavail sur le système d'afichage        | Haute | Fait | Sprint A |Sarah |
