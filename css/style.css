@@ -20,13 +20,6 @@ img {
   height: auto;
 }
 
-#welcome {
-  display: block;
-}
-
-#resume, #projects {
-  display: none;
-} /*faire un extend*/
 html body {
   font-family: "Merienda";
 }
@@ -48,6 +41,9 @@ html body main .card-real .slide-img {
 html body main .card-real .real-text {
   width: 80%;
   font-family: "lemonada";
+  font-size: 12px;
+  border: 1px solid red;
+}/*# sourceMappingURL=style.css.map */emonada";
   font-size: 12px;
   border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */
