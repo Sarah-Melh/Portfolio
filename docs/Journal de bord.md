@@ -150,3 +150,18 @@ pour un future navigation correcte.
 - créer les fonctions pour les liens dynamiques et
 les liens depuis les pages indépendantes
 - je repousse une partie de ce sprint à plus tard
+
+## Sprint 8 : Style général
+- Création des feuilles SCSS font, colors, mixins
+- Couleurs du background header et footer
+- Couleurs du background du body
+- Insertion de l'image de fond
+- Harmonisation des polices et des images
+- Stylisation des boutons
+- Stylisation des cartes
+
+### Ce qui a été
+- 
+
+### Ce qui s'est mal passé
+- 
