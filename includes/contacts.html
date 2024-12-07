@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/zoning.css">
+    <!-- <link rel="stylesheet" href="../css/zoning.css"> -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/frameworks/fontawesome.min.css">
     <link rel="stylesheet" href="../css/frameworks/bootstrap.min.css">
@@ -27,15 +27,15 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main class="container" id="main-contacts">
         <h2>Contactez-moi</h2>
-        <form action="">
+        <form id="card-form" class="d-flex flex-column col-sm-12 col-md-8 col-lg-6" action="">
             <label for="name">Nom</label>
-            <input type="text" name="name" id="name">
+            <input class="col-4" type="text" name="name" id="name">
             <label for="firstname">Prénom</label>
-            <input type="text" name="firstname" id="firstname">
+            <input class="col-4" type="text" name="firstname" id="firstname">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input class="col-4" type="email" name="email" id="email">
             <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
             <button id="contact-btn" class="btn">envoyer</button>
