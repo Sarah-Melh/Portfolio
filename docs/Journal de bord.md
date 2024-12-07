@@ -149,3 +149,4 @@ pour un future navigation correcte.
 ### Ce qui s'est mal passé
 - créer les fonctions pour les liens dynamiques et
 les liens depuis les pages indépendantes
+- je repousse une partie de ce sprint à plus tard

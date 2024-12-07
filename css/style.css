@@ -20,8 +20,45 @@ img {
   height: auto;
 }
 
+html {
+  /*body*/
+}
 html body {
   font-family: "Merienda";
+  box-sizing: border-box;
+  font-family: "Merienda";
+  color: #ede9e9;
+  background: linear-gradient(to bottom, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
+  background: bightness(5%);
+  background-attachment: fixed;
+  /*header*/
+  /*main*/
+  /*footer*/
+}
+html body header {
+  position: sticky;
+  /*voir pourquoi ca ne fonctionne pas*/
+  border-bottom: 1px solid #7169e8;
+  /*couleurs de fond*/
+  background: linear-gradient(to top, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
+  /*taille du logo*/
+}
+html body header #logo-site {
+  width: 6em;
+  height: auto;
+}
+html body header > div > a {
+  margin: 1em;
+}
+html body main #moon {
+  width: 25em;
+  height: auto;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 50%;
 }
 html body main .card-real {
   background-color: #ede9e9;
@@ -43,7 +80,22 @@ html body main .card-real .real-text {
   font-family: "lemonada";
   font-size: 12px;
   border: 1px solid red;
-}/*# sourceMappingURL=style.css.map */emonada";
-  font-size: 12px;
-  border: 1px solid red;
+}
+html body footer {
+  border-top: 1px solid #7169e8;
+  /*regler la position du footer*/
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: auto;
+  bottom: 0;
+  position: fixed;
+  /*couleurs du footer*/
+  background: linear-gradient(to bottom, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
+  display: flex;
+  justify-content: space-evenly;
+}
+html body footer #legal {
+  font-size: 13px;
 }/*# sourceMappingURL=style.css.map */

@@ -24,8 +24,8 @@
 | ID | JS-Vérification de l'email          | Priorité | Statut | Sprint 7 |Sarah |
 | ID | JS-Vérification du formulaire       | Priorité | Statut | Sprint 7 |Sarah |
 | ID | JS-Actions des boutons              | Priorité | Statut | Sprint 7 |Sarah |
-| ID | Responsive                          | Priorité | Statut | Sprint 8 |Sarah |
-| ID | SCSS-Stylisation générale du site   | Priorité | Statut | Sprint 9|Sarah |
+| ID | SCSS-Stylisation générale du site   | Priorité | Statut | Sprint 8|Sarah |
+| ID | Responsive                          | Priorité | Statut | Sprint 9 |Sarah |
 | ID | SCSS-Animations                     | Priorité | Statut | Sprint 10 |Sarah |
 | ID | Ajout de la balise ARIA             | Priorité | Statut | Sprint 11 |Sarah |
 | ID | Vérification contraste              | Priorité | Statut | Sprint 11 |Sarah |

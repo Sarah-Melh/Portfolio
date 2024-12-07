@@ -1,3 +1,10 @@
+// charger uniquement la partie accueil
+window.addEventListener('DOMContentLoaded', () => {
+    $('.display-page').hide();
+    $('#welcome').show();
+});
+
+
 // Navigation dynamique
 function dynamicLinks() {
     // selectionner les éléments (liens et sections)
@@ -19,29 +26,37 @@ function dynamicLinks() {
     });
     
 }
-let currentPage = URL 
-console.log(location.href)
-if (currentPage = 'index.html') {
+
+let currentPage = location.href; 
+console.log(currentPage)
+if (currentPage.includes('index.html')) {
     dynamicLinks()
 }
 
-function navInde (){
-    let classHide;
-    let classKeep;
-    let chosenLink;
-    if (chosenLink = document.querySelector('#real-inde')) {
-        classKeep = document.querySelector('#projects');
-        classHide = document.querySelector('#welcome') && document.querySelector('#resume');
-        classKeep.classList.add('.display-on');
-        classHide.classList.add('.display-off');
-        chosenLink.addEventListener('click',() => {
-            classKeep.classModif.toggle('active');
-            classHide.classModif.toggle('active');
-        });
-    }
-}
-if (currentPage = 'contact.html') {
-    navInde()
-}
+
+// let currentPage = URL 
+// console.log(location.href)
+// if (currentPage = 'index.html') {
+//     dynamicLinks()
+// }
+
+// function navInde (){
+//     let classHide;
+//     let classKeep;
+//     let chosenLink;
+//     if (chosenLink = document.querySelector('#real-inde')) {
+//         classKeep = document.querySelector('#projects');
+//         classHide = document.querySelector('#welcome') && document.querySelector('#resume');
+//         classKeep.classList.add('.display-on');
+//         classHide.classList.add('.display-off');
+//         chosenLink.addEventListener('click',() => {
+//             classKeep.classModif.toggle('active');
+//             classHide.classModif.toggle('active');
+//         });
+//     }
+// }
+// if (currentPage = 'contact.html') {
+//     navInde()
+// }
 
 
