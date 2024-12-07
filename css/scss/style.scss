@@ -1,0 +1,57 @@
+@use "sass:map";
+@use '_colors.scss' as c;
+@use '_fonts.scss' as f;
+@use '_extend.scss';
+@use '_mixins.scss' as m;
+
+// provisoire pour avoir des images plus petites durant le dev
+img {
+    width: 20em;
+    height: auto;
+}
+
+#logo-site {
+    width: 10em;
+    height: auto;
+}
+
+
+html {
+    body {
+        font-family: 'Merienda';
+        // color: map-get(c.$colors, 'light' );
+        // background: linear-gradient(to bottom,
+        //         map-get(c.$colors, 'nightblue') 20%,
+        //         map-get(c.$colors, 'dark') 70%);
+        // background: bightness(5%);
+        // background-attachment: fixed;
+        // background-image: url(../assets/imgs/moon.png);
+        // background-size: 30em 30em ;
+        // background-repeat: no-repeat;
+        // background-position: bottom left;
+        main {
+            // réalisations
+            .card-real {
+                background-color: map-get(c.$colors, 'light' );
+                justify-items: center;
+                border: 2px solid black;
+                border-radius: 0.4em;
+                box-shadow: 4px 4px map-get(c.$colors, 'lavander' );
+                >h3 { 
+                    font-family: 'lemon';
+                    text-align: center;
+                }
+                .slide-img {
+                    width: 90%;
+                    border: 1px solid black;
+                };
+                .real-text {
+                    width: 80%;
+                    font-family: 'lemonada';
+                    font-size: 12px;
+                    border: 1px solid red;
+                }
+            }
+        }
+    }
+}
