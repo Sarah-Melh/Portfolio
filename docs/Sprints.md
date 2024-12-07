@@ -60,12 +60,7 @@
     - Vérification de la validité de saisie de l'email
     - Bouton submit de la page contact
 
-## Sprint 8 : Responsive
-- Utiliser bootstrap pour les rows et colonnes
-    (attention à la classe card!)
-- Si besoin: media queries en scss
-
-## Sprint 9 : Style général
+## Sprint 8 : Style général
 - Création des feuilles SCSS font, colors, mixins
 - Couleurs du background header et footer
 - Couleurs du background du body
@@ -73,6 +68,12 @@
 - Harmonisation des polices et des images
 - Stylisation des boutons
 - Stylisation des cartes
+
+## Sprint 9 : Responsive
+- Utiliser bootstrap pour les rows et colonnes
+    (attention à la classe card!)
+- Si besoin: media queries en scss
+
 
 ## Sprint 10 : Style 
 - Création des animations en SCSS:
