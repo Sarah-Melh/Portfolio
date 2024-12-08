@@ -168,4 +168,5 @@ les liens depuis les pages indépendantes
 - 
 
 ### Ce qui s'est mal passé
-- problème de mixins qui n'ont pas été prises en compte
+- problème de réponse du scss sûrement dû au dédoublement des fichier  
+    -> **résolution:** refaire tout le fichier à partir d'une sauvegarde
