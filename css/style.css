@@ -25,6 +25,14 @@ footer a {
   color: #ede9e9;
 }
 
+.card-title {
+  font-family: "lemon";
+}
+
+.info-text {
+  font-family: "lemonada";
+}
+
 html body {
   box-sizing: border-box;
   font-family: "Merienda";
@@ -62,7 +70,7 @@ html body #main-index #card-welcome {
   color: black;
   border: 2px solid black;
   border-radius: 0.4em;
-  box-shadow: 4px 4px #7169e8;
+  box-shadow: 2px 2px #7169e8;
   padding-left: 1em;
 }
 html body #main-index #welcome {
@@ -96,7 +104,6 @@ html body #main-index #projects .card-real {
   margin: 2em;
 }
 html body #main-index #projects .card-real > h3 {
-  font-family: "lemon";
   text-align: center;
 }
 html body #main-index #projects .card-real .slide {

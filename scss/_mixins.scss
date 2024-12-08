@@ -1,0 +1,18 @@
+@mixin cardGeneral {
+    background-color: map-get($colors, 'light');
+    color: black;
+    border: 2px solid map-get($colors, 'lavander');
+    border-radius: 0.4em;
+    box-shadow: 2px 2px map-get($colors, 'lavander');
+    padding-left: 1em;
+}
+
+@mixin gradientBottom {
+    background: linear-gradient(to bottom,
+            #0f07a5 5%,
+            #150b81 25%,
+            #160d5a 40%,
+            #060c33 60%,
+            #040820 80%,
+            #010101 100%);
+}
