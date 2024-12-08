@@ -19,9 +19,9 @@
     <header>
         <div>
             <img id="logo-site" src="assets/logo/Logo.png" alt="logo du site">
-            <a href="#welcome" class="dynamic" id="hello" data-link="welcome">Accueil</a>
-            <a href="#projects" class="dynamic" id="real" data-link="projects">Réalisations</a>
-            <a href="#resume" class="dynamic" id="road" data-link="resume">Parours</a>
+            <a href="#welcome" class="dynamic" id="hello">Accueil</a>
+            <a href="#projects" class="dynamic" id="real">Réalisations</a>
+            <a href="#resume" class="dynamic" id="road">Parours</a>
             <a href="includes/contacts.html">Contact</a>
         </div>
     </header>
@@ -74,13 +74,24 @@
             <div class="container d-flex flex-row">
                 <div class="card-general card-real col-sm-12 col-md-3">
                     <h3 class="card-title">Première maquette</h3>
-                    <div class="slide">
-                        <img class="slide-img" src="assets/imgs/proto_accueil.png" alt="page accueil">
-                        <img class="slide-img" src="assets/imgs/proto_contact.png" alt="page contact">
-                        <img class="slide-img" src="assets/imgs/proto_catalog.png" alt="administration catalogue">
-                        <img class="slide-img" src="assets/imgs/proto_form.png" alt="formulaire ajout oeuvre">
+                    <div class="slide-container">
                         <a id="slide-left" class="slide-control"><i class="fa-solid fa-chevron-left"></i></a>
                         <a id="slide-right" class="slide-control"><i class="fa-solid fa-chevron-right"></i></a>
+                        <ul>
+                            <li class="slide active">
+                                <img class="slide-img active" src="assets/imgs/proto_accueil.png" alt="page accueil">
+                            </li>
+                            <li class="slide">
+                                <img class="slide-img" src="assets/imgs/proto_contact.png" alt="page contact">
+                            </li>
+                            <li class="slide">
+                                <img class="slide-img" src="assets/imgs/proto_catalog.png"
+                                    alt="administration catalogue">
+                            </li>
+                            <li class="slide">
+                                <img class="slide-img" src="assets/imgs/proto_form.png" alt="formulaire ajout oeuvre">
+                            </li>
+                        </ul>
                     </div>
                     <blockquote class="info-text real-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -91,7 +102,7 @@
                 </div>
                 <div class="card-general card-real col-sm-12 col-md-3">
                     <h3 class="card-title">Zorglub Services</h3>
-                    <div class="slide">
+                    <div class="slide-container">
                         <img class="slide-img" src="assets/imgs/Zorglub_accueil.png" alt="page d'accueil">
                         <img class="slide-img" src="assets/imgs/Zorglub_assurancepng.png" alt="assurance auto">
                         <img class="slide-img" src="assets/imgs/Zorglub_monnaie.png" alt="rendu de monnaie">
@@ -107,7 +118,7 @@
                 </div>
                 <div class="card-general card-real col-sm-12 col-md-3">
                     <h3 class="card-title">AC/DC</h3>
-                    <div class="slide">
+                    <div class="slide-container">
                         <img class="slide-img" src="assets/imgs/ac-dc1.png" alt="haut de page">
                         <img class="slide-img" src="assets/imgs/ac-dc2.png" alt="albums">
                         <img class="slide-img" src="assets/imgs/ac-dc3.png" alt="bas de page">
@@ -126,7 +137,7 @@
             <div class="container d-flex flex-row">
                 <div class="card-general card-real col-sm-12 col-md-6 col-lg-3">
                     <h3 class="card-title">Shoesplash</h3>
-                    <div class="slide">
+                    <div class="slide-container">
                         <img class="slide-img" src="assets/imgs/shoe1.png" alt="haut de page">
                         <img class="slide-img" src="assets/imgs/shoe2.png" alt="selection articles">
                         <img class="slide-img" src="assets/imgs/shoe3.png" alt="bas de page">
@@ -142,7 +153,7 @@
                 </div>
                 <div class="card-general card-real col-sm-12 col-md-6 col-lg-3">
                     <h3 class="card-title">Please, like me</h3>
-                    <div class="slide">
+                    <div class="slide-container">
                         <img src="assets/imgs/like_me.png" alt="haut de page">
                     </div>
                     <blockquote class="info-text real-text">
@@ -154,7 +165,7 @@
                 </div>
                 <div class="card-general card-real col-sm-12 col-md-6 col-lg-3">
                     <h3 class="card-title">Bibliothèque</h3>
-                    <div class="slide">
+                    <div class="slide-container">
                         <img src="assets/imgs/livres.png" alt="liste livres">
                     </div>
                     <blockquote class="info-text real-text">

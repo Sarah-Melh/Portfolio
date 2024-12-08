@@ -24,3 +24,8 @@ function navLink() {
     window.addEventListener('hashchange', displayPage);
 }
 navLink();
+
+
+function showSlide () {
+    
+}
