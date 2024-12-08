@@ -1,3 +1,9 @@
 %blue-moon {
-    opacity : 50%;
+    z-index: -10;
+    opacity: 50%;
+}
+
+%links {
+    text-decoration: none;
+    color: map-get(c.$colors, light);
 }
