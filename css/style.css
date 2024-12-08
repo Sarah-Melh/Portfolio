@@ -1,0 +1,211 @@
+@font-face {
+  font-family: Lemon;
+  src: url(../assets/fonts/Lemon-Regular.ttf);
+}
+@font-face {
+  font-family: Lemonada;
+  src: url(../assets/fonts/Lemonada-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Merienda;
+  src: url(../assets/fonts/Merienda-VariableFont_wght.ttf);
+}
+html body #main-index #first-moon, html body #main-index #projects #second-moon {
+  z-index: -10;
+  opacity: 50%;
+}
+
+html body header a, html footer a {
+  text-decoration: none;
+  color: #ede9e9;
+}
+
+html img {
+  width: 20em;
+  height: auto;
+}
+html body {
+  background: linear-gradient(to bottom, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Merienda";
+  color: #ede9e9;
+  background-attachment: fixed;
+}
+html body .card-title {
+  font-family: "Lemon";
+}
+html body .info-text {
+  font-family: "Lemonada";
+}
+html body header {
+  position: sticky;
+  /*voir pourquoi ca ne fonctionne pas*/
+  border-bottom: 1px solid #7169e8;
+  /*couleurs de fond*/
+  background: linear-gradient(to top, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
+}
+html body header #logo-site {
+  width: 6em;
+  height: auto;
+}
+html body header > div > a {
+  margin: 1em;
+}
+html body #main-index #first-moon {
+  width: 25em;
+  height: auto;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+html body #main-index #card-welcome {
+  background-color: #ede9e9;
+  color: black;
+  border: 2px solid #7169e8;
+  border-radius: 0.4em;
+  box-shadow: 1px 1px #7169e8;
+  padding-left: 1em;
+}
+html body #main-index #welcome {
+  margin-top: 5em;
+  margin-left: 5em;
+}
+html body #main-index #projects {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+html body #main-index #projects > h2 {
+  text-align: center;
+}
+html body #main-index #projects #second-moon {
+  width: 25em;
+  height: auto;
+  margin-left: 13em;
+  margin-top: 6em;
+  position: fixed;
+}
+html body #main-index #projects .card-real {
+  background-color: #ede9e9;
+  color: black;
+  border: 2px solid #7169e8;
+  border-radius: 0.4em;
+  box-shadow: 1px 1px #7169e8;
+  padding-left: 1em;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+html body #main-index #projects .card-real > h3 {
+  text-align: center;
+}
+html body #main-index #projects .card-real .slide-container {
+  position: relative;
+  width: 90%;
+  height: 10em;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  background-color: red;
+  border: px solid #7169e8;
+  border-radius: 2px;
+}
+html body #main-index #projects .card-real .slide-container .slide-control {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 10;
+}
+html body #main-index #projects .card-real .slide-container #slide-left {
+  left: 5px;
+}
+html body #main-index #projects .card-real .slide-container #slide-right {
+  right: 5px;
+}
+html body #main-index #projects .card-real .slide-container .slide {
+  list-style: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+html body #main-index #projects .card-real .slide-container .slide.active {
+  opacity: 1;
+}
+html body #main-index #projects .card-real .slide-container .slide .slide img {
+  margin: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body #main-index #projects .card-real .real-text {
+  width: 90%;
+  padding: 1em;
+  margin: 2em;
+  font-size: 12px;
+}
+html body #main-index #resume #resume-img {
+  background-color: #ede9e9;
+  color: black;
+  border: 2px solid #7169e8;
+  border-radius: 0.4em;
+  box-shadow: 1px 1px #7169e8;
+  padding-left: 1em;
+}
+html body #main-index #resume #card-resume {
+  background-color: #ede9e9;
+  color: black;
+  border: 2px solid #7169e8;
+  border-radius: 0.4em;
+  box-shadow: 1px 1px #7169e8;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+html body #main-contacts #card-form {
+  background-color: #ede9e9;
+  color: black;
+  border: 2px solid #7169e8;
+  border-radius: 0.4em;
+  box-shadow: 1px 1px #7169e8;
+  padding-left: 1em;
+  text-align: center;
+}
+html body #main-contacts #card-form > label {
+  font-family: "Lemonada";
+}
+html body #main-legal #card-legal {
+  background-color: #ede9e9;
+  color: black;
+  border: 2px solid #7169e8;
+  border-radius: 0.4em;
+  box-shadow: 1px 1px #7169e8;
+  padding-left: 1em;
+}
+html footer {
+  border-top: 1px solid #7169e8;
+  width: 100%;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: auto;
+  bottom: 0;
+  position: fixed;
+  /*couleurs du footer*/
+  background: linear-gradient(to bottom, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
+  display: flex;
+  justify-content: space-evenly;
+}
+html footer #legal {
+  font-size: 13px;
+}/*# sourceMappingURL=style.css.map */

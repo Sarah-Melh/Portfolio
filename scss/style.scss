@@ -3,3 +3,229 @@
 @use '_fonts.scss' as f;
 @use '_extend.scss';
 @use '_mixins.scss' as m;
+
+
+html {
+    img {
+        width: 20em;
+        height: auto;
+    }
+
+    // body
+    body {
+        .card-title {
+            font-family: map-get(f.$fonts, titleFont);
+        }
+
+        .info-text {
+            font-family: map-get(f.$fonts, cardFont);
+        }
+
+        @include m.gradientBottom;
+        margin: 0;
+        min-height: 100vh;
+        box-sizing: border-box;
+        font-family: map-get(f.$fonts, generalFont);
+        color: map-get(c.$colors, 'light');
+        background-attachment: fixed;
+
+        // header
+        header {
+            position: sticky;
+            /*voir pourquoi ca ne fonctionne pas*/
+            border-bottom: 1px solid map-get(c.$colors, 'lavander');
+            /*couleurs de fond*/
+            background: linear-gradient(to top,
+                    #0f07a5 5%,
+                    #150b81 25%,
+                    #160d5a 40%,
+                    #060c33 60%,
+                    #040820 80%,
+                    #010101 100%);
+
+            a {
+                @extend %links
+            }
+
+            #logo-site {
+                width: 6em;
+                height: auto;
+            }
+
+            >div>a {
+                margin: 1em;
+            }
+        }
+
+        // main
+        #main-index {
+
+            // acceuil
+            #first-moon {
+                @extend %blue-moon;
+                width: 25em;
+                height: auto;
+                margin: 0;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+            }
+
+            #card-welcome {
+                @include m.cardGeneral
+            }
+
+            #welcome {
+                margin-top: 5em;
+                margin-left: 5em;
+            }
+
+            // réalisations
+            #projects {
+                margin-top: 3em;
+                margin-bottom: 3em;
+
+                >h2 {
+                    text-align: center;
+                }
+
+                #second-moon {
+                    @extend %blue-moon;
+                    width: 25em;
+                    height: auto;
+                    margin-left: 13em;
+                    margin-top: 6em;
+                    position: fixed;
+                }
+
+                .card-real {
+                    @include m.cardGeneral;
+                    height: auto;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2em;
+
+                    >h3 {
+                        text-align: center;
+                    }
+
+                    // slide show des cartes
+                    .slide-container {
+                        position: relative;
+                        width: 90%;
+                        height: 10em;
+                        overflow: hidden;
+                        margin: auto;
+                        display: flex;
+                        background-color: red;
+                        border: px solid map-get(c.$colors, 'lavander');
+                        border-radius: 2px;
+
+                        .slide-control {
+                            position: absolute;
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            z-index: 10;
+                        }
+
+                        #slide-left {
+                            left: 5px;
+                        }
+
+                        #slide-right {
+                            right: 5px;
+                        }
+
+                        .slide {
+                            list-style: none;
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            opacity: 0;
+                            transition: 0.8s ease-in-out;
+
+                            &.active {
+                                opacity: 1;
+                            }
+
+                            .slide img {
+                                margin: 0;
+                                display: block;
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .real-text {
+                        width: 90%;
+                        padding: 1em;
+                        margin: 2em;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            // page cv
+            #resume {
+                #resume-img {
+                    @include m.cardGeneral;
+                }
+
+                #card-resume {
+                    @include m.cardGeneral;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        // Page de contact
+        #main-contacts {
+            #card-form {
+                @include m.cardGeneral;
+                text-align: center;
+
+                >label {
+                    font-family: map-get(f.$fonts, cardFont);
+                }
+            }
+        }
+
+        // Mentions légales
+        #main-legal {
+            #card-legal {
+                @include m.cardGeneral
+            }
+        }
+
+    }
+
+    footer {
+        border-top: 1px solid map-get(c.$colors, 'lavander');
+        width: 100%;
+        height: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: auto;
+        bottom: 0;
+        position: fixed;
+        /*couleurs du footer*/
+        @include m.gradientBottom;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            @extend %links
+        }
+
+        #legal {
+            font-size: 13px;
+        }
+    }
+}

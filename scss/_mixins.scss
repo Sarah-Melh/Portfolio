@@ -1,9 +1,12 @@
+@use "sass:map";
+@use '_colors.scss' as c;
+
 @mixin cardGeneral {
-    background-color: map-get($colors, 'light');
+    background-color: map-get(c.$colors, 'light');
     color: black;
-    border: 2px solid map-get($colors, 'lavander');
+    border: 2px solid map-get(c.$colors, 'lavander');
     border-radius: 0.4em;
-    box-shadow: 2px 2px map-get($colors, 'lavander');
+    box-shadow: 1px 1px map-get(c.$colors, 'lavander');
     padding-left: 1em;
 }
 
