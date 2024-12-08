@@ -22,12 +22,12 @@ html {
 
     // body
     body {
+        @include m.gradientBottom;
         margin: 0;
         min-height: 100vh;
         box-sizing: border-box;
         font-family: map-get(f.$fonts, generalFont);
         color: map-get(c.$colors, 'light');
-        @include m.gradientBottom;
         background-attachment: fixed;
 
         // header
@@ -62,13 +62,13 @@ html {
 
             // acceuil
             #first-moon {
+                @extend %blue-moon;
                 width: 25em;
                 height: auto;
                 margin: 0;
                 position: fixed;
                 bottom: 0;
                 left: 0;
-                @extend %blue-moon;
             }
 
             #card-welcome {
@@ -90,12 +90,12 @@ html {
                 }
 
                 #second-moon {
+                    @extend %blue-moon;
                     width: 25em;
                     height: auto;
                     margin-left: 13em;
                     margin-top: 6em;
                     position: fixed;
-                    @extend %blue-moon;
                 }
 
                 .card-real {

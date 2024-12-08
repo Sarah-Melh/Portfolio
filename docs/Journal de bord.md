@@ -116,7 +116,7 @@ Résolu facilement.
 
 ### Annotation 
 - l'ordre des sprints ne correspond pas à la procédure nécessaire 
-pour un future navigation correcte.
+pour une future navigation correcte.
 - revoir l'odre des sprints pour faciliter le travail
 
 
@@ -151,6 +151,10 @@ pour un future navigation correcte.
 les liens depuis les pages indépendantes
 - je repousse une partie de ce sprint à plus tard
 
+### Résolution
+- après beaucoup de tatônnements, la fonction de navigation est fonctionnelle.
+
+
 ## Sprint 8 : Style général
 - Création des feuilles SCSS font, colors, mixins
 - Couleurs du background header et footer
@@ -164,4 +168,4 @@ les liens depuis les pages indépendantes
 - 
 
 ### Ce qui s'est mal passé
-- 
+- problème de mixins qui n'ont pas été prises en compte

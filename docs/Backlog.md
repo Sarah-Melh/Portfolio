@@ -18,9 +18,8 @@
 | ID | HTML-Contenu "CV"                   | Priorité | Fait | Sprint 4 |Sarah |
 | ID | HTML-Page "contact"                 | Priorité | Fait | Sprint 5 |Sarah |
 | ID | HTML-Page "mentions légales"        | Priorité | Fait | Sprint 6 |Sarah |
-| ID | relier les pages indépendantes      | Priorité | En cours | Sprint 7|Sarah |
-| ID | Mise en place du menu dynamique     | Priorité | En cours | Sprint 7|Sarah |
-| ID | JS-Mise en place du menu dynamique  | Priorité | Statut | Sprint 7 |Sarah |
+| ID | JS-relier les pages indépendantes   | Priorité | Fait | Sprint 7|Sarah |
+| ID | JS-Mise en place du menu dynamique  | Priorité | Fait | Sprint 7 |Sarah |
 | ID | JS-Vérification de l'email          | Priorité | Statut | Sprint 7 |Sarah |
 | ID | JS-Vérification du formulaire       | Priorité | Statut | Sprint 7 |Sarah |
 | ID | JS-Actions des boutons              | Priorité | Statut | Sprint 7 |Sarah |
