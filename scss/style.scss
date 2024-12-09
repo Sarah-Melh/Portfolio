@@ -3,6 +3,7 @@
 @use '_fonts.scss' as f;
 @use '_extend.scss';
 @use '_mixins.scss' as m;
+@use '_keyframes' as k;
 
 
 html {
@@ -88,6 +89,7 @@ html {
                     position: fixed;
                     bottom: 0;
                     left: 0;
+                    animation: moonriseOne 5s ease-in-out;
                 }
 
                 #card-welcome {
@@ -155,11 +157,12 @@ html {
 
                 #second-moon {
                     @extend %blue-moon;
-                    width: 35em;
+                    width: 40em;
                     height: auto;
                     position: fixed;
-                    top: 15%;
-                    left: 18%;
+                    top: 10%;
+                    left: 26%;
+                    animation: moonriseTwo 5s ease-in-out;
                 }
 
                 .card-row {
@@ -212,11 +215,12 @@ html {
 
                 #third-moon {
                     @extend %blue-moon;
-                    width: 40em;
+                    width: 47em;
                     height: auto;
                     position: fixed;
-                    top: 12%;
-                    left: 22%
+                    top: 4%;
+                    left: 38%;
+                    animation : moonriseThree 10s ease-in-out;
                 }
 
                 #road {
@@ -252,7 +256,8 @@ html {
                 height: auto;
                 position: fixed;
                 top: 5%;
-                left: 54%
+                left: 54%;
+                animation: moonriseFour 10s ease-in-out
             }
 
             >h2 {
@@ -261,8 +266,8 @@ html {
 
             #card-form {
                 @include m.cardGeneral;
-                padding: 1em 0 5em 0;
-                margin-bottom: 15em;
+                padding: 1em 0 3.5em 0;
+                margin-bottom: 6em;
 
                 >form {
                     display: grid;
@@ -371,7 +376,8 @@ html {
                 height: auto;
                 position: fixed;
                 top: 20%;
-                left: 72%
+                left: 72%;
+                animation: moonriseFive 10s ease-in-out;
             }
 
             #card-legal {
