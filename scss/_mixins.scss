@@ -1,5 +1,6 @@
 @use "sass:map";
 @use '_colors.scss' as c;
+@use '_fonts.scss' as f;
 
 @mixin cardGeneral {
     background-color: map-get(c.$colors, 'light');
@@ -18,4 +19,16 @@
             #060c33 60%,
             #040820 80%,
             #010101 100%);
+}
+
+@mixin allBtn {
+    border: 1px solid map-get(c.$colors, 'nightblue');
+    border-radius: 4px;
+    background-color: map-get(c.$colors, 'dusk');
+    color: map-get(c.$colors, 'light');
+    font-family: map-get(f.$fonts, 'lemonada');
+    &:hover {
+        filter: brightness(150%);
+        color: map-get(c.$colors, 'dark');
+    }
 }

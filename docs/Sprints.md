@@ -66,7 +66,7 @@
 - Couleurs du background du body ✓
 - Insertion de l'image de fond ✓
 - Harmonisation des polices et des images ✓
-- Stylisation des boutons
+- Stylisation des boutons ✓
 - Stylisation des cartes ✓
 
 ## Sprint 9 : Responsive

@@ -6,7 +6,7 @@
 
 
 html {
-    
+
     // body
     body {
         .card-title {
@@ -220,37 +220,102 @@ html {
                 top: 5%;
                 left: 54%
             }
+
             >h2 {
                 margin-bottom: 1em;
             }
 
             #card-form {
-                padding: 1em 0 5em 0;
                 @include m.cardGeneral;
-                form {
+                padding: 1em 0 5em 0;
+                margin-bottom: 15em;
+
+                >form {
                     display: grid;
                     flex-direction: column;
                     justify-content: center;
                     text-align: center;
+
                     label {
                         font-family: map-get(f.$fonts, cardFont);
-                        margin-top: 0.7em;
+                        margin-top: 0.4em;
                     }
+
+                    .error-msg {
+                        margin-top: 0.4em;
+                    }
+
                     .form-square {
                         width: 16em;
                         border: 1px solid map-get(c.$colors, 'lavander');
                         border-radius: 4px;
                         margin-top: 0.3em;
                     }
+
                     textarea {
                         height: 7em;
                     }
+
                     #contact-btn {
                         margin-top: 2em;
-                        border: 1px solid map-get(c.$colors, 'nightblue');
-                        border-radius: 4px;
-                        background-color: map-get(c.$colors, 'dusk');
-                        color: map-get(c.$colors, 'light');
+                        @include m.allBtn;
+                    }
+                }
+            }
+
+            // modale
+            #modal-container {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+                #form-modal {
+                    @include m.cardGeneral;
+                    font-family: map-get(f.$fonts, 'cardFont');
+                    background-color: #ede9e9e7;
+                    position: absolute;
+                    display: grid;
+                    top: 28%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 32em;
+                    height: 14em;
+
+                    >p {
+                        font-size: 15px;
+                        position: fixed;
+                        justify-self: center;
+                        top: 30%
+                    }
+
+                    .modal-btn {
+                        @include m.allBtn;
+                        cursor: pointer;
+                        position: fixed;
+                        justify-self: center;
+                        bottom: 0;
+                        bottom: 15%;
+                        padding: 0.2em;
+                    }
+
+                    #valid-btn {
+                        left: 30%;
+                    }
+
+                    #annul-btn {
+                        right: 30%;
+                        background-color: map-get(c.$colors, 'light-lavand');
+                        color: #f7f5f5;
+
+                        &:hover {
+                            filter: darkness(150%);
+                            color: map-get(c.$colors, 'dusk');
+                        }
                     }
                 }
             }
@@ -261,9 +326,11 @@ html {
             margin-top: 3em;
             display: grid;
             justify-items: center;
+
             h2 {
                 text-align: center
             }
+
             #fifth-moon {
                 @extend %blue-moon;
                 width: 45em;
@@ -272,10 +339,12 @@ html {
                 top: 20%;
                 left: 72%
             }
+
             #card-legal {
                 @include m.cardGeneral;
                 margin-top: 2em;
                 height: 30em;
+
                 >article {
                     padding: 2em;
                 }

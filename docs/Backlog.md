@@ -20,11 +20,11 @@
 | ID | HTML-Page "mentions légales"        | Haute | Fait | Sprint 6 |Sarah |
 | ID | JS-relier les pages indépendantes   | Haute | Fait | Sprint 7|Sarah |
 | ID | JS-Mise en place du menu dynamique  | Haute | Fait | Sprint 7 |Sarah |
-| ID | JS-Vérification de l'email          | Haute | Statut | Sprint 7 |Sarah |
-| ID | JS-Vérification du formulaire       | Haute | Statut | Sprint 7 |Sarah |
-| ID | JS-Actions des boutons              | Haute | Statut | Sprint 7 |Sarah |
-| ID | SCSS-Stylisation générale du site   | Priorité | En cours | Sprint 8|Sarah |
-| ID | Responsive                          | Priorité | Statut | Sprint 9 |Sarah |
+| ID | JS-Vérification de l'email          | Haute | Fait | Sprint 7 |Sarah |
+| ID | JS-Vérification du formulaire       | Haute | Fait | Sprint 7 |Sarah |
+| ID | JS-Actions des boutons              | Haute | Fait | Sprint 7 |Sarah |
+| ID | SCSS-Stylisation générale du site   | Priorité | Fait | Sprint 8|Sarah |
+| ID | Responsive                          | Priorité | En cours | Sprint 9 |Sarah |
 | ID | SCSS-Animations                     | Priorité | Statut | Sprint 10 |Sarah |
 | ID | Ajout de la balise ARIA             | Priorité | Statut | Sprint 11 |Sarah |
 | ID | Vérification contraste              | Priorité | Statut | Sprint 11 |Sarah |

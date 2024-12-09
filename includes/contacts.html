@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/frameworks/fontawesome.min.css">
     <link rel="stylesheet" href="../css/frameworks/bootstrap.min.css">
-    <script src="../js/frameworks/vue.global.prod.js"></script>
+    <!-- <script src="../js/frameworks/vue.global.prod.js"></script> -->
     <script src="../js/frameworks/jquery.min.js"></script>
 </head>
 
@@ -27,23 +27,33 @@
     </header>
 
     <!-- main -->
-    <main class="container" id="main-contacts">        
+    <main class="container" id="main-contacts">
         <img id="fourth-moon" class="moon" src="../assets/imgs/moon.png" alt="lune">
         <h2>Contactez-moi</h2>
-        <div id="card-form" class="col-sm-12 col-md-8 col-lg-5">
-            <form action="">
-                <label for="name">Nom</label>
-                <input class="form-square" type="text" name="name" id="name">
-                <label for="firstname">Prénom</label>
-                <input class="form-square" type="text" name="firstname" id="firstname">
-                <label for="email">Email</label>
-                <input class="form-square" type="email" name="email" id="email">
-                <label for="message">Message</label>
-                <textarea class="form-square" name="message" id="message"></textarea>
-                <button id="contact-btn" class="btn">Envoyer</button>
+        <div id="card-form" class="col-sm-10 col-md-8 col-lg-4">
+            <form id="form-contact" action="">
+                <label for="name" aria-label="nom">Nom</label>
+                <input class="form-square" type="text" name="name" id="name" placeholder="Entrez votre nom" aria-label="Entrez votre nom">
+                <p class="error-msg" id="error-name"></p>
+                <label for="firstname" aria-label="prénom">Prénom</label>
+                <input class="form-square" type="text" name="firstname" id="firstname" placeholder="Entrez votre prénom" aria-label="Entrez votre prénom">
+                <p class="error-msg" id="error-firstname"></p>
+                <label for="email" aria-label="email">Email</label>
+                <input class="form-square" type="text" name="email" id="email" placeholder="Entrez votre email" aria-label="Entrez votre email">
+                <p class="error-msg" id="error-email"></p>
+                <label for="message" aria-label="message">Message</label>
+                <textarea class="form-square" name="message" id="message" placeholder="Entrez votre message" aria-label="Entrez votre message"></textarea>
+                <p class="error-msg" id="error-message"></p>
+                <button id="contact-btn" type="submit" class="btn" aria-label="Envoyer votre message">Envoyer</button>
             </form>
-                    </div>
-
+        </div>
+        <div id="modal-container" aria-hidden="true">
+            <div id="form-modal">
+                <p aria-label="confirmation de l'envoi du message">Voulez vous confirmer l'envoi de votre formulaire?</p>
+                <button class="modal-btn" type="submit" id="valid-btn" aria-label="valider l'envoi">Valider</button>
+                <button class="modal-btn" type="dismiss-modal" id="annul-btn" aria-label="annuler l'envoi">Annuler</button>
+            </div>
+        </div>
     </main>
 
     <!-- footer -->
