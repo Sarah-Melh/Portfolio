@@ -15,9 +15,9 @@ html body #main-index #welcome #first-moon, html body #main-index #projects #sec
   opacity: 50%;
 }
 
-html body header a, html footer a {
-  text-decoration: none;
+html body header .nav-list > a, html footer a {
   color: #ede9e9;
+  text-decoration: none;
 }
 
 html body {
@@ -43,9 +43,20 @@ html body header {
   /*couleurs de fond*/
   background: linear-gradient(to top, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
 }
+html body header .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+html body header .nav-list {
+  list-style-type: none;
+  padding: 1em;
+  margin-top: 1em;
+}
 html body header #logo-site {
   width: 6em;
   height: auto;
+  float: left;
 }
 html body header > div > a {
   margin: 1em;
@@ -54,8 +65,12 @@ html body #main-index #welcome {
   margin-top: 3em;
   margin-left: 4em;
 }
+html body #main-index #welcome > h1 {
+  text-align: center;
+  font-size: 5em;
+}
 html body #main-index #welcome #first-moon {
-  width: 32em;
+  width: 50em;
   height: auto;
   margin: 0;
   position: fixed;
@@ -69,6 +84,9 @@ html body #main-index #welcome #card-welcome {
   border-radius: 0.4em;
   box-shadow: 1px 1px #7169e8;
   padding-left: 1em;
+  float: right;
+  margin-top: 12em;
+  margin-right: 10em;
 }
 html body #main-index #welcome #dev-comp {
   display: grid;
@@ -118,6 +136,7 @@ html body #main-index #projects {
 html body #main-index #projects > h2 {
   text-align: center;
   margin-right: 4.5em;
+  font-size: 3em;
 }
 html body #main-index #projects #second-moon {
   width: 35em;
@@ -126,7 +145,11 @@ html body #main-index #projects #second-moon {
   top: 15%;
   left: 18%;
 }
-html body #main-index #projects .card-real {
+html body #main-index #projects .card-row {
+  display: flex;
+  flex-direction: row;
+}
+html body #main-index #projects .card-row .card-real {
   background-color: #ede9e9;
   color: black;
   border: 2px solid #7169e8;
@@ -139,25 +162,25 @@ html body #main-index #projects .card-real {
   flex-direction: column;
   margin: 2em;
 }
-html body #main-index #projects .card-real > h4 {
+html body #main-index #projects .card-row .card-real > h4 {
   text-align: center;
   margin-bottom: 1em;
   margin-top: 0.5em;
 }
-html body #main-index #projects .card-real .image-container {
+html body #main-index #projects .card-row .card-real .image-container {
   width: 90%;
   height: 10em;
   margin-left: 0.5em;
   display: flex;
 }
-html body #main-index #projects .card-real .image-container .real-img {
+html body #main-index #projects .card-row .card-real .image-container .real-img {
   border: 1px solid #7169e8;
   border-radius: 3px;
   margin: 0;
   height: 100%;
   width: 100%;
 }
-html body #main-index #projects .card-real .real-text {
+html body #main-index #projects .card-row .card-real .real-text {
   width: 90%;
   padding: 1em;
   margin: 2em;
@@ -175,6 +198,9 @@ html body #main-index #resume #third-moon {
   top: 12%;
   left: 22%;
 }
+html body #main-index #resume #road > h2 {
+  font-size: 3em;
+}
 html body #main-index #resume #road #card-resume {
   background-color: #ede9e9;
   color: black;
@@ -182,6 +208,7 @@ html body #main-index #resume #road #card-resume {
   border-radius: 0.4em;
   box-shadow: 1px 1px #7169e8;
   padding-left: 1em;
+  margin-top: 2em;
 }
 html body #main-index #resume #resume-img {
   background-color: #ede9e9;
@@ -191,6 +218,9 @@ html body #main-index #resume #resume-img {
   box-shadow: 1px 1px #7169e8;
   padding-left: 1em;
   margin-left: 23em;
+  width: 30em;
+  height: 40em;
+  padding-left: 0;
 }
 html body #main-contacts {
   margin-top: 3em;
@@ -354,4 +384,57 @@ html footer {
 }
 html footer #legal {
   font-size: 13px;
+}
+
+@media only screen and (max-width: 430px) {
+  body header > #nav-head {
+    display: grid;
+    justify-content: center;
+  }
+  body header > #nav-head > .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body header > #nav-head > .navigation .nav-list {
+    margin: 0;
+    padding: 0.3em;
+    text-align: center;
+  }
+  body #main-index #welcome {
+    display: grid;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+  body #main-index #welcome > h1 {
+    margin-bottom: 0;
+  }
+  body #main-index #welcome > #card-welcome {
+    margin-top: 2em !important;
+    margin-right: 0 !important;
+  }
+  body #main-index #resume {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: 1em !important;
+  }
+  body #main-index #resume > #road > h2 {
+    text-align: center;
+  }
+  body #main-index #resume #resume-img {
+    margin-left: 2em !important;
+    margin-top: 2em;
+    width: 19em !important;
+    height: auto;
+  }
+  body #main-index #projects .card-row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  body #main-index #projects h2 {
+    text-align: center !important;
+  }
+  body #main-contacts > #card-form {
+    padding: 1.5em !important;
+  }
 }/*# sourceMappingURL=style.css.map */

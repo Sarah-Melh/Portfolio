@@ -23,10 +23,10 @@
 | ID | JS-Vérification de l'email          | Haute | Fait | Sprint 7 |Sarah |
 | ID | JS-Vérification du formulaire       | Haute | Fait | Sprint 7 |Sarah |
 | ID | JS-Actions des boutons              | Haute | Fait | Sprint 7 |Sarah |
-| ID | SCSS-Stylisation générale du site   | Priorité | Fait | Sprint 8|Sarah |
-| ID | Responsive                          | Priorité | En cours | Sprint 9 |Sarah |
+| ID | SCSS-Stylisation générale du site   | Haute | Fait | Sprint 8|Sarah |
+| ID | Responsive                          | Haute | Fait | Sprint 9 |Sarah |
 | ID | SCSS-Animations                     | Priorité | Statut | Sprint 10 |Sarah |
-| ID | Ajout de la balise ARIA             | Priorité | Statut | Sprint 11 |Sarah |
+| ID | Ajout de la balise ARIA             | Haute | Fait | Sprint 11 |Sarah |
 | ID | Vérification contraste              | Priorité | Statut | Sprint 11 |Sarah |
 | ID | Ajouts (si besoin)                  | Basse | Statut | Sprint 12 |Sarah |
 | ID | Vérification du code                | Priorité | Statut | Sprint 13 |Sarah |

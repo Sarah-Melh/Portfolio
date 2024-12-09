@@ -70,9 +70,9 @@
 - Stylisation des cartes ✓
 
 ## Sprint 9 : Responsive
-- Utiliser bootstrap pour les rows et colonnes
+- Utiliser bootstrap pour les rows et colonnes ✓
     (attention à la classe card!)
-- Si besoin: media queries en scss
+- Si besoin: media queries en scss ✓
 
 
 ## Sprint 10 : Style 
@@ -82,7 +82,7 @@
 - Création des slides shows
 
 ## Sprint 11 : Accessibilité
-- Ajout de la balise ARIA
+- Ajout de la balise ARIA ✓
 - Vérification du contraste des couleurs
 
 ## Sprint 12 : Ajouts

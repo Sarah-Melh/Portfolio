@@ -187,3 +187,22 @@ les liens depuis les pages indépendantes
 
 ---------------------
 -------------------
+
+## Sprint 9 : Responsive
+- Utiliser bootstrap pour les rows et colonnes 
+    (attention à la classe card!)
+- Si besoin: media queries en scss 
+
+### Ce qui a été
+- L'ensemble s'est déroulé correctement
+
+### Ce qui s'est mal passé
+- bootstrap répondait très mal
+    -> **résolution:** utilisation de média queries  
+        le responsive est correct
+- lors de la vérification des media queries je me suis aperçue que la 
+page dynamique 'parcours' était visible  
+    -> **résolution:** Je n'ai pas trouvé de solution
+
+---------------------
+-------------------
