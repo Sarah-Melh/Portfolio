@@ -102,7 +102,8 @@ Résolu facilement.
 
 ### Ce qui s'est mal passé
 
-### A revoir (si il y a du temps)
+---------------------
+-------------------
 
 ## Sprint 7: Style général
 ### Ce que je prévois
@@ -119,6 +120,8 @@ Résolu facilement.
 pour une future navigation correcte.
 - revoir l'odre des sprints pour faciliter le travail
 
+---------------------
+-------------------
 
 ## Sprint A : réorientation
 ### Ce que je prévois
@@ -128,6 +131,9 @@ pour une future navigation correcte.
     - gérer l'affichage dynamique des pages en html et js
 - Travail sur le système d'affichage
     - préparer la structure de base pour un affichage dynamique des contenus
+
+---------------------
+-------------------
 
 ## Sprint 7 : JS 
 ### Ce que je prévois
@@ -145,15 +151,21 @@ pour une future navigation correcte.
 
 ### Ce qui a été
 - les idées pour les liens sont venues assez rapidement
-
+- la fonction de vérification
+- fonctions des boutons
 ### Ce qui s'est mal passé
 - créer les fonctions pour les liens dynamiques et
-les liens depuis les pages indépendantes
+les liens depuis les pages indépendantes  
+    -> beaucoup de temps passé dessus (retard sur le reste)
 - je repousse une partie de ce sprint à plus tard
+- j'ai abandonné l'idée des slides-show pour les projets  
+    -> cette option est remise à plus tard
 
 ### Résolution
 - après beaucoup de tatônnements, la fonction de navigation est fonctionnelle.
 
+---------------------
+-------------------
 
 ## Sprint 8 : Style général
 - Création des feuilles SCSS font, colors, mixins
@@ -165,10 +177,13 @@ les liens depuis les pages indépendantes
 - Stylisation des cartes
 
 ### Ce qui a été
-- 
+- L'ensemble s'est déroulé correctement
 
 ### Ce qui s'est mal passé
 - problème de réponse du scss sûrement dû au dédoublement des fichier  
     -> **résolution:** refaire tout le fichier à partir d'une sauvegarde  
-    Il s'agissait d'une erreur dans la feuille extend (oubli d'un appel du fichier 'colors').
+    Il s'agissait d'une erreur dans la feuille extend (oubli d'un appel du fichier 'colors'). En conséquence de ce problème, il y a eu un problème 
+    de merge sur l'arbre git (sûrement dû à la fatigue).
 
+---------------------
+-------------------
