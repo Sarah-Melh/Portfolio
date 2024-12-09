@@ -40,12 +40,12 @@
 
 ## Sprint A :
 - Révision des priorités de la gestion de projet
-    - revoir l'ordre des sprints et, si besoin leur contenu
+    - revoir l'ordre des sprints et, si besoin leur contenu ✓
 - Construction du système de navigation 
-    - gérer l'affichage dynamique des pages en html et js
+    - gérer l'affichage dynamique des pages en html et js ✓
     -> Sprint 7
 - Travail sur le système d'affichage
-    - préparer la structure de base pour un affichage dynamique des contenus
+    - préparer la structure de base pour un affichage dynamique des contenus ✓
 
 ## Sprint 7 : JS 
 - Général

@@ -2,7 +2,6 @@
 function navLink() {
     function displayPage() {
         const Link = window.location.hash || '#welcome';
-        console.log(Link)
         $('.display-page').hide();
         switch (Link) {
             case '#welcome':
@@ -15,7 +14,6 @@ function navLink() {
                 $('#resume').show();
                 break;
             default: $('#welcome').show();
-
         }
     }
     // permet la navigation depuis les pages indépendantes
@@ -25,7 +23,3 @@ function navLink() {
 }
 navLink();
 
-
-function showSlide () {
-    
-}

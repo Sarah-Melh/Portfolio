@@ -19,9 +19,9 @@
     <header>
         <div>
             <img id="logo-site" src="assets/logo/Logo.png" alt="logo du site">
-            <a href="#welcome" class="dynamic" id="hello">Accueil</a>
-            <a href="#projects" class="dynamic" id="real">Réalisations</a>
-            <a href="#resume" class="dynamic" id="road">Parours</a>
+            <a href="#welcome">Accueil</a>
+            <a href="#projects">Réalisations</a>
+            <a href="#resume">Parours</a>
             <a href="includes/contacts.html">Contact</a>
         </div>
     </header>
@@ -40,31 +40,23 @@
                     ratione voluptatum provident nam, numquam soluta ipsa vitae? Maxime?
                 </blockquote>
             </div>
-            <!-- <div>
+            <div id="dev-comp">
                 <h2>Mes compétences en développement</h2>
-                <form action="">
-                    <select name="" id="">
-                        <option value="">--</option>
-                        <option value="">HTML</option>
-                        <option value="">CSS & SCSS</option>
-                        <option value="">Bootstrap</option>
-                        <option value="">Javascript</option>
-                        <option value="">php</option>
-                    </select>
-                    <button id="comp-btn" class="btn">Envoyer</button>
-                </form>
-                <div class="card-general card-comp">
-                    <h3>HTML</h3>
-                    <input class="checkbox" type="checkbox">
-                    <label class="comp-label">A acquérir</label>
-                    <input class="checkbox" type="checkbox">
-                    <label class="comp-label">En cours d'acquisition</label>
-                    <input class="checkbox" type="checkbox">
-                    <label class="comp-label">Acquis</label>
-                    <input class="checkbox" type="checkbox">
-                    <label class="comp-label">Maîtrisé</label>
+                <div class="card-general" id="card-comp">
+                    <h3 class="card-title">Front-end</h3>
+                    <div id="comp-list">
+                        <h4>HTML:</h4>
+                        <form>
+                            <label for="not-yet" class="comp-label">A acquérir</label>
+                            <input name="not-yet" class="radio" type="radio">
+                            <label for="soon" class="comp-label">En cours d'acquisition</label>
+                            <input name="soon" class="radio" type="radio">
+                            <label for="done" class="comp-label" checked="checked">Acquis</label>
+                            <input name="done" class="radio" type="radio">
+                        </form>
+                    </div>
                 </div>
-            </div> -->
+            </div>
         </section>
         <!-- réalisations -->
         <section class="display-page" id="projects">
@@ -73,25 +65,9 @@
             <!-- première ligne -->
             <div class="container d-flex flex-row">
                 <div class="card-general card-real col-sm-12 col-md-3">
-                    <h3 class="card-title">Première maquette</h3>
-                    <div class="slide-container">
-                        <button id="slide-left" class="slide-control"><i class="fa-solid fa-chevron-left"></i></button>
-                        <button id="slide-right" class="slide-control"><i class="fa-solid fa-chevron-right"></i></button>
-                        <ul>
-                            <li class="slide active">
-                                <img class="slide-img active" src="assets/imgs/proto_accueil.png" alt="page accueil">
-                            </li>
-                            <li class="slide">
-                                <img class="slide-img" src="assets/imgs/proto_contact.png" alt="page contact">
-                            </li>
-                            <li class="slide">
-                                <img class="slide-img" src="assets/imgs/proto_catalog.png"
-                                    alt="administration catalogue">
-                            </li>
-                            <li class="slide">
-                                <img class="slide-img" src="assets/imgs/proto_form.png" alt="formulaire ajout oeuvre">
-                            </li>
-                        </ul>
+                    <h4 class="card-title">Première maquette</h4>
+                    <div class="image-container">
+                        <img class="real-img" src="assets/imgs/proto_accueil.png" alt="page accueil">
                     </div>
                     <blockquote class="info-text real-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -101,22 +77,9 @@
                     </blockquote>
                 </div>
                 <div class="card-general card-real col-sm-12 col-md-3">
-                    <h3 class="card-title">Zorglub Services</h3>
-                    <div class="slide-container">
-                        <button id="slide-left" class="slide-control"><i class="fa-solid fa-chevron-left"></i></button>
-                        <button id="slide-right" class="slide-control"><i class="fa-solid fa-chevron-right"></i></button>
-                        <ul>
-                            <li class="slide active">
-                                <img class="slide-img active" src="assets/imgs/Zorglub_accueil.png" alt="page accueil">
-                            </li>
-                            <li class="slide">
-                                <img class="slide-img" src="assets/imgs/Zorglub_assurancepng.png" alt="page contact">
-                            </li>
-                            <li class="slide">
-                                <img class="slide-img" src="assets/imgs/Zorglub_monnaie.png"
-                                    alt="administration catalogue">
-                            </li>
-                        </ul>
+                    <h4 class="card-title">Zorglub Services</h4>
+                    <div class="image-container">
+                        <img class="real-img" src="assets/imgs/Zorglub_monnaie.png" alt="image zorglub_monnaie">
                     </div>
                     <blockquote class="info-text real-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -126,13 +89,9 @@
                     </blockquote>
                 </div>
                 <div class="card-general card-real col-sm-12 col-md-3">
-                    <h3 class="card-title">AC/DC</h3>
-                    <div class="slide-container">
-                        <img class="slide-img" src="assets/imgs/ac-dc1.png" alt="haut de page">
-                        <img class="slide-img" src="assets/imgs/ac-dc2.png" alt="albums">
-                        <img class="slide-img" src="assets/imgs/ac-dc3.png" alt="bas de page">
-                        <a href="#" id="slide-left" class="slide-control"><i class="fa-solid fa-chevron-left"></i></a>
-                        <a href="#" id="slide-right" class="slide-control"><i class="fa-solid fa-chevron-right"></i></a>
+                    <h4 class="card-title">AC DC</h4>
+                    <div class="image-container">
+                        <img class="real-img" src="assets/imgs/ac-dc1.png" alt="image acdc">
                     </div>
                     <blockquote class="info-text real-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -145,13 +104,9 @@
             <!-- deuxième ligne -->
             <div class="container d-flex flex-row">
                 <div class="card-general card-real col-sm-12 col-md-6 col-lg-3">
-                    <h3 class="card-title">Shoesplash</h3>
-                    <div class="slide-container">
-                        <img class="slide-img" src="assets/imgs/shoe1.png" alt="haut de page">
-                        <img class="slide-img" src="assets/imgs/shoe2.png" alt="selection articles">
-                        <img class="slide-img" src="assets/imgs/shoe3.png" alt="bas de page">
-                        <a href="#" id="slide-left" class="slide-control"><i class="fa-solid fa-chevron-left"></i></a>
-                        <a href="#" id="slide-right" class="slide-control"><i class="fa-solid fa-chevron-right"></i></a>
+                    <h4 class="card-title">Shoesplash</h4>
+                    <div class="image-container">
+                        <img class="real-img" src="assets/imgs/shoe2.png" alt="selection articles">
                     </div>
                     <blockquote class="info-text real-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -161,9 +116,9 @@
                     </blockquote>
                 </div>
                 <div class="card-general card-real col-sm-12 col-md-6 col-lg-3">
-                    <h3 class="card-title">Please, like me</h3>
-                    <div class="slide-container">
-                        <img src="assets/imgs/like_me.png" alt="haut de page">
+                    <h4 class="card-title">Please, like me</h4>
+                    <div class="image-container">
+                        <img class="real-img" src="assets/imgs/like_me.png" alt="haut de page">
                     </div>
                     <blockquote class="info-text real-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -173,9 +128,9 @@
                     </blockquote>
                 </div>
                 <div class="card-general card-real col-sm-12 col-md-6 col-lg-3">
-                    <h3 class="card-title">Bibliothèque</h3>
-                    <div class="slide-container">
-                        <img src="assets/imgs/livres.png" alt="liste livres">
+                    <h4 class="card-title">Bibliothèque</h4>
+                    <div class="image-container">
+                        <img class="real-img" src="assets/imgs/livres.png" alt="liste livres">
                     </div>
                     <blockquote class="info-text real-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -184,19 +139,21 @@
                         numquam dignissimos porro voluptas voluptate, est fugiat?
                     </blockquote>
                 </div>
-
             </div>
         </section>
         <!-- CV -->
-        <section class="display-page" id="resume">
-            <h2>Mon Parcours</h2>
-            <div class="card-general col-sm-12 col-md-6" id="card-resume">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ad optio
-                    consequuntur ducimus explicabo reiciendis, at sunt quibusdam maiores officia aut quos
-                    asperiores iusto minima dicta amet harum nisi omnis nostrum. Dolorum veritatis fuga ipsa!
-                </p>
+        <section class="display-page container" id="resume">
+            <img id="third-moon" class="moon" src="assets/imgs/moon.png" alt="lune">
+            <div id="road" class="col-sm-12 col-md-6">
+                <h2>Mon Parcours</h2>
+                <div class="card-general" id="card-resume">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ad optio
+                        consequuntur ducimus explicabo reiciendis, at sunt quibusdam maiores officia aut quos
+                        asperiores iusto minima dicta amet harum nisi omnis nostrum. Dolorum veritatis fuga ipsa!
+                    </p>
+                </div>
             </div>
-            <img id="resume-img" src="assets/imgs/CV_SarahMelhaa.png" alt="cv">
+            <img id="resume-img" class="col-sm-12 col-md-5" src="assets/imgs/CV_SarahMelhaa.png" alt="cv">
         </section>
 
     </main>
