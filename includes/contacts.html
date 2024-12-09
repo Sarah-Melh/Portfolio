@@ -27,19 +27,22 @@
     </header>
 
     <!-- main -->
-    <main class="container" id="main-contacts">
+    <main class="container" id="main-contacts">        
+        <img id="fourth-moon" class="moon" src="../assets/imgs/moon.png" alt="lune">
         <h2>Contactez-moi</h2>
-        <form id="card-form" class="d-flex flex-column col-sm-12 col-md-8 col-lg-6" action="">
-            <label for="name">Nom</label>
-            <input class="col-4" type="text" name="name" id="name">
-            <label for="firstname">Prénom</label>
-            <input class="col-4" type="text" name="firstname" id="firstname">
-            <label for="email">Email</label>
-            <input class="col-4" type="email" name="email" id="email">
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-            <button id="contact-btn" class="btn">envoyer</button>
-        </form>
+        <div id="card-form" class="col-sm-12 col-md-8 col-lg-5">
+            <form action="">
+                <label for="name">Nom</label>
+                <input class="form-square" type="text" name="name" id="name">
+                <label for="firstname">Prénom</label>
+                <input class="form-square" type="text" name="firstname" id="firstname">
+                <label for="email">Email</label>
+                <input class="form-square" type="email" name="email" id="email">
+                <label for="message">Message</label>
+                <textarea class="form-square" name="message" id="message"></textarea>
+                <button id="contact-btn" class="btn">Envoyer</button>
+            </form>
+                    </div>
 
     </main>
 

@@ -169,4 +169,6 @@ les liens depuis les pages indépendantes
 
 ### Ce qui s'est mal passé
 - problème de réponse du scss sûrement dû au dédoublement des fichier  
-    -> **résolution:** refaire tout le fichier à partir d'une sauvegarde
+    -> **résolution:** refaire tout le fichier à partir d'une sauvegarde  
+    Il s'agissait d'une erreur dans la feuille extend (oubli d'un appel du fichier 'colors').
+

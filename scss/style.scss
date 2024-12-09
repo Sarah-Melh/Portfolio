@@ -6,11 +6,7 @@
 
 
 html {
-    img {
-        width: 20em;
-        height: auto;
-    }
-
+    
     // body
     body {
         .card-title {
@@ -32,7 +28,8 @@ html {
         // header
         header {
             position: sticky;
-            /*voir pourquoi ca ne fonctionne pas*/
+            top: 0;
+            z-index: 100;
             border-bottom: 1px solid map-get(c.$colors, 'lavander');
             /*couleurs de fond*/
             background: linear-gradient(to top,
@@ -61,41 +58,86 @@ html {
         #main-index {
 
             // acceuil
-            #first-moon {
-                @extend %blue-moon;
-                width: 25em;
-                height: auto;
-                margin: 0;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-            }
-
-            #card-welcome {
-                @include m.cardGeneral
-            }
-
             #welcome {
-                margin-top: 5em;
-                margin-left: 5em;
+                margin-top: 3em;
+                margin-left: 4em;
+
+                #first-moon {
+                    @extend %blue-moon;
+                    width: 32em;
+                    height: auto;
+                    margin: 0;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                #card-welcome {
+                    @include m.cardGeneral
+                }
+
+                #dev-comp {
+                    display: grid;
+                    justify-items: flex-end;
+                    margin-top: 3em;
+                    margin-right: 4em;
+
+                    >h2 {
+                        margin-bottom: 1em
+                    }
+
+                    #card-comp {
+                        @include m.cardGeneral;
+                        display: flex;
+                        flex-direction: column;
+                        justify-self: end;
+                        margin-right: 3em;
+                        width: 30em;
+                        height: 18em;
+
+                        >h3 {
+                            text-align: center;
+                            margin-top: 0.5em;
+                        }
+
+                        #comp-list {
+                            font-family: map-get(f.$fonts, cardFont);
+                            font-size: 12px;
+                            margin-top: 1em;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-evenly;
+
+                            .radio {
+                                padding-top: 10px;
+                            }
+
+                            >h4 {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                }
             }
 
             // réalisations
             #projects {
-                margin-top: 3em;
+                margin-top: 5em;
                 margin-bottom: 3em;
 
                 >h2 {
                     text-align: center;
+                    margin-right: 4.5em;
                 }
 
                 #second-moon {
                     @extend %blue-moon;
-                    width: 25em;
+                    width: 35em;
                     height: auto;
-                    margin-left: 13em;
-                    margin-top: 6em;
                     position: fixed;
+                    top: 15%;
+                    left: 18%;
                 }
 
                 .card-real {
@@ -106,59 +148,24 @@ html {
                     flex-direction: column;
                     margin: 2em;
 
-                    >h3 {
+                    >h4 {
                         text-align: center;
+                        margin-bottom: 1em;
+                        margin-top: 0.5em;
                     }
 
-                    // slide show des cartes
-                    .slide-container {
-                        position: relative;
+                    .image-container {
                         width: 90%;
                         height: 10em;
-                        overflow: hidden;
-                        margin: auto;
+                        margin-left: 0.5em;
                         display: flex;
-                        background-color: red;
-                        border: px solid map-get(c.$colors, 'lavander');
-                        border-radius: 2px;
 
-                        .slide-control {
-                            position: absolute;
-                            background: none;
-                            border: none;
-                            cursor: pointer;
-                            transform: translateY(-50%);
-                            top: 50%;
-                            z-index: 10;
-                        }
-
-                        #slide-left {
-                            left: 5px;
-                        }
-
-                        #slide-right {
-                            right: 5px;
-                        }
-
-                        .slide {
-                            list-style: none;
-                            position: absolute;
+                        .real-img {
+                            border: 1px solid map-get(c.$colors, 'lavander');
+                            border-radius: 3px;
+                            margin: 0;
                             height: 100%;
                             width: 100%;
-                            opacity: 0;
-                            transition: 0.8s ease-in-out;
-
-                            &.active {
-                                opacity: 1;
-                            }
-
-                            .slide img {
-                                margin: 0;
-                                display: block;
-                                height: 100%;
-                                width: 100%;
-                                object-fit: cover;
-                            }
                         }
                     }
 
@@ -173,34 +180,105 @@ html {
 
             // page cv
             #resume {
-                #resume-img {
-                    @include m.cardGeneral;
+                margin: 2.5em 0 5em 4em;
+                display: flex;
+                flex-direction: row;
+
+                #third-moon {
+                    @extend %blue-moon;
+                    width: 40em;
+                    height: auto;
+                    position: fixed;
+                    top: 12%;
+                    left: 22%
                 }
 
-                #card-resume {
+                #road {
+                    #card-resume {
+                        @include m.cardGeneral;
+                    }
+                }
+
+                #resume-img {
                     @include m.cardGeneral;
-                    display: flex;
-                    flex-direction: column;
+                    margin-left: 23em;
                 }
             }
         }
 
         // Page de contact
         #main-contacts {
-            #card-form {
-                @include m.cardGeneral;
-                text-align: center;
+            margin-top: 3em;
+            display: grid;
+            justify-items: center;
 
-                >label {
-                    font-family: map-get(f.$fonts, cardFont);
+            #fourth-moon {
+                @extend %blue-moon;
+                width: 40em;
+                height: auto;
+                position: fixed;
+                top: 5%;
+                left: 54%
+            }
+            >h2 {
+                margin-bottom: 1em;
+            }
+
+            #card-form {
+                padding: 1em 0 5em 0;
+                @include m.cardGeneral;
+                form {
+                    display: grid;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    label {
+                        font-family: map-get(f.$fonts, cardFont);
+                        margin-top: 0.7em;
+                    }
+                    .form-square {
+                        width: 16em;
+                        border: 1px solid map-get(c.$colors, 'lavander');
+                        border-radius: 4px;
+                        margin-top: 0.3em;
+                    }
+                    textarea {
+                        height: 7em;
+                    }
+                    #contact-btn {
+                        margin-top: 2em;
+                        border: 1px solid map-get(c.$colors, 'nightblue');
+                        border-radius: 4px;
+                        background-color: map-get(c.$colors, 'dusk');
+                        color: map-get(c.$colors, 'light');
+                    }
                 }
             }
         }
 
         // Mentions légales
         #main-legal {
+            margin-top: 3em;
+            display: grid;
+            justify-items: center;
+            h2 {
+                text-align: center
+            }
+            #fifth-moon {
+                @extend %blue-moon;
+                width: 45em;
+                height: auto;
+                position: fixed;
+                top: 20%;
+                left: 72%
+            }
             #card-legal {
-                @include m.cardGeneral
+                @include m.cardGeneral;
+                margin-top: 2em;
+                height: 30em;
+                >article {
+                    padding: 2em;
+                }
             }
         }
 
