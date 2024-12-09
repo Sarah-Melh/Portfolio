@@ -200,8 +200,26 @@ les liens depuis les pages indépendantes
 - bootstrap répondait très mal
     -> **résolution:** utilisation de média queries  
         le responsive est correct
-- lors de la vérification des media queries je me suis aperçue que la 
-page dynamique 'parcours' était visible  
+- lors de la vérification des media queries je me suis aperçue que la page dynamique 'parcours' était visible  
+    -> **résolution:** Je n'ai pas trouvé de solution
+
+---------------------
+-------------------
+
+## Sprint 10 : Style 
+- Création des animations en SCSS:
+    - apparition de l'image de fond 
+    - apparition des cartes (remis à plus tard)
+- Création des slides shows (remis à plus tard)
+
+### Ce qui a été
+- L'ensemble s'est déroulé correctement
+
+### Ce qui s'est mal passé
+- par manque de temps, j'ai renoncé à certains éléments du projet  
+    -> éléments qui pourront être rajouté par la suite
+- j'ai un peu cherché comment faire 
+- le problème de responsive s'est répercuté sur l'animation la lune apparaît deux fois  
     -> **résolution:** Je n'ai pas trouvé de solution
 
 ---------------------

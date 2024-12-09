@@ -77,9 +77,9 @@
 
 ## Sprint 10 : Style 
 - Création des animations en SCSS:
-    - apparition de l'image de fond
-    - apparition des cartes
-- Création des slides shows
+    - apparition de l'image de fond ✓
+    - apparition des cartes (remis à plus tard)
+- Création des slides shows (remis à plus tard)
 
 ## Sprint 11 : Accessibilité
 - Ajout de la balise ARIA ✓
