@@ -40,13 +40,26 @@ html {
                     #040820 80%,
                     #010101 100%);
 
-            a {
-                @extend %links
+            .navigation {
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+            }
+
+            .nav-list {
+                list-style-type: none;
+                padding: 1em;
+                margin-top: 1em;
+
+                >a {
+                    @extend %links
+                }
             }
 
             #logo-site {
                 width: 6em;
                 height: auto;
+                float: left;
             }
 
             >div>a {
@@ -62,9 +75,14 @@ html {
                 margin-top: 3em;
                 margin-left: 4em;
 
+                >h1 {
+                    text-align: center;
+                    font-size: 5em;
+                }
+
                 #first-moon {
                     @extend %blue-moon;
-                    width: 32em;
+                    width: 50em;
                     height: auto;
                     margin: 0;
                     position: fixed;
@@ -73,7 +91,10 @@ html {
                 }
 
                 #card-welcome {
-                    @include m.cardGeneral
+                    @include m.cardGeneral;
+                    float: right;
+                    margin-top: 12em;
+                    margin-right: 10em;
                 }
 
                 #dev-comp {
@@ -129,6 +150,7 @@ html {
                 >h2 {
                     text-align: center;
                     margin-right: 4.5em;
+                    font-size: 3em;
                 }
 
                 #second-moon {
@@ -140,40 +162,44 @@ html {
                     left: 18%;
                 }
 
-                .card-real {
-                    @include m.cardGeneral;
-                    height: auto;
-                    position: relative;
+                .card-row {
                     display: flex;
-                    flex-direction: column;
-                    margin: 2em;
-
-                    >h4 {
-                        text-align: center;
-                        margin-bottom: 1em;
-                        margin-top: 0.5em;
-                    }
-
-                    .image-container {
-                        width: 90%;
-                        height: 10em;
-                        margin-left: 0.5em;
+                    flex-direction: row;
+                    .card-real {
+                        @include m.cardGeneral;
+                        height: auto;
+                        position: relative;
                         display: flex;
-
-                        .real-img {
-                            border: 1px solid map-get(c.$colors, 'lavander');
-                            border-radius: 3px;
-                            margin: 0;
-                            height: 100%;
-                            width: 100%;
-                        }
-                    }
-
-                    .real-text {
-                        width: 90%;
-                        padding: 1em;
+                        flex-direction: column;
                         margin: 2em;
-                        font-size: 12px;
+
+                        >h4 {
+                            text-align: center;
+                            margin-bottom: 1em;
+                            margin-top: 0.5em;
+                        }
+
+                        .image-container {
+                            width: 90%;
+                            height: 10em;
+                            margin-left: 0.5em;
+                            display: flex;
+
+                            .real-img {
+                                border: 1px solid map-get(c.$colors, 'lavander');
+                                border-radius: 3px;
+                                margin: 0;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        .real-text {
+                            width: 90%;
+                            padding: 1em;
+                            margin: 2em;
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -194,14 +220,22 @@ html {
                 }
 
                 #road {
+                    >h2 {
+                        font-size: 3em;
+                    }
+
                     #card-resume {
                         @include m.cardGeneral;
+                        margin-top: 2em;
                     }
                 }
 
                 #resume-img {
                     @include m.cardGeneral;
                     margin-left: 23em;
+                    width: 30em;
+                    height: 40em;
+                    padding-left: 0;
                 }
             }
         }
@@ -373,6 +407,78 @@ html {
 
         #legal {
             font-size: 13px;
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    body {
+        header {
+            >#nav-head {
+                display: grid;
+                justify-content: center;
+
+                >.navigation {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .nav-list {
+                        margin: 0;
+                        padding: 0.3em;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        #main-index {
+            #welcome {
+                display: grid;
+                justify-content: center;
+                margin-left: 0 !important;
+
+                >h1 {
+                    margin-bottom: 0;
+                }
+
+                >#card-welcome {
+                    margin-top: 2em !important;
+                    margin-right: 0 !important;
+                }
+            }
+
+            #resume {
+                display: flex !important;
+                flex-direction: column !important;
+                margin-left: 1em !important;
+
+                >#road>h2 {
+                    text-align: center;
+                }
+
+                #resume-img {
+                    margin-left: 2em !important;
+                    margin-top: 2em;
+                    width: 19em !important;
+                    height: auto;
+                }
+            }
+
+            #projects {
+                .card-row {
+                    display: flex !important;
+                    flex-direction: column !important;
+                }
+                h2 {
+                    text-align: center !important;
+                }
+            }
+        }
+        #main-contacts {
+            >#card-form {
+                padding: 1.5em !important;
+            }
         }
     }
 }
