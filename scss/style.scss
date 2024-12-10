@@ -353,6 +353,7 @@ html {
 
     }
 
+    // footer
     footer {
         @include m.gradientBottom;
         border-top: 1px solid map-get(c.$colors, 'lavander');
@@ -393,6 +394,7 @@ html {
     }
 }
 
+// media query
 @media only screen and (max-width: 430px) {
     body {
         header {
@@ -462,6 +464,14 @@ html {
         #main-contacts {
             >#card-form {
                 padding: 1.5em !important;
+                margin-bottom: 10em !important;
+            }
+        }
+
+        #main-legal {
+            #card-legal {
+                margin-bottom: 12em !important;
+                height: auto !important;
             }
         }
     }
