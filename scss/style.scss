@@ -10,13 +10,6 @@ html {
 
     // body
     body {
-        .card-title {
-            font-family: map-get(f.$fonts, titleFont);
-        }
-
-        .info-text {
-            font-family: map-get(f.$fonts, cardFont);
-        }
 
         @include m.gradientBottom;
         margin: 0;
@@ -25,6 +18,16 @@ html {
         font-family: map-get(f.$fonts, generalFont);
         color: map-get(c.$colors, 'light');
         background-attachment: fixed;
+
+        // commun aux différentes pages
+        .card-title {
+            font-family: map-get(f.$fonts, titleFont);
+            color: map-get(c.$colors, 'dark');
+        }
+
+        .info-text {
+            @extend %card-text;
+        }
 
         // header
         header {
@@ -45,26 +48,22 @@ html {
                 display: flex;
                 flex-direction: row;
                 justify-items: center;
-            }
 
-            .nav-list {
-                list-style-type: none;
-                padding: 1em;
-                margin-top: 1em;
-
-                >a {
-                    @extend %links
+                #logo-site {
+                    width: 6em;
+                    height: auto;
+                    float: left;
                 }
-            }
 
-            #logo-site {
-                width: 6em;
-                height: auto;
-                float: left;
-            }
+                .nav-list {
+                    list-style-type: none;
+                    padding: 1em;
+                    margin-top: 1em;
 
-            >div>a {
-                margin: 1em;
+                    >a {
+                        @extend %links;
+                    }
+                }
             }
         }
 
@@ -84,9 +83,7 @@ html {
                 #first-moon {
                     @extend %blue-moon;
                     width: 50em;
-                    height: auto;
                     margin: 0;
-                    position: fixed;
                     bottom: 0;
                     left: 0;
                     animation: moonriseOne 5s ease-in-out;
@@ -97,57 +94,26 @@ html {
                     float: right;
                     margin-top: 12em;
                     margin-right: 10em;
-                }
-
-                #dev-comp {
-                    display: grid;
-                    justify-items: flex-end;
-                    margin-top: 3em;
-                    margin-right: 4em;
-
-                    >h2 {
-                        margin-bottom: 1em
+                    padding: 1em;
+                    >h3 {
+                        // margin-top: 0.2em;
+                        margin-bottom: 0.5em;
                     }
-
-                    #card-comp {
-                        @include m.cardGeneral;
-                        display: flex;
-                        flex-direction: column;
-                        justify-self: end;
-                        margin-right: 3em;
-                        width: 30em;
-                        height: 18em;
-
-                        >h3 {
-                            text-align: center;
-                            margin-top: 0.5em;
-                        }
-
-                        #comp-list {
-                            font-family: map-get(f.$fonts, cardFont);
-                            font-size: 12px;
-                            margin-top: 1em;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-evenly;
-
-                            .radio {
-                                padding-top: 10px;
-                            }
-
-                            >h4 {
-                                font-size: 15px;
-                            }
-                        }
-                    }
-
                 }
             }
 
             // réalisations
             #projects {
                 margin-top: 5em;
-                margin-bottom: 3em;
+                margin-bottom: 10em;
+
+                #second-moon {
+                    @extend %blue-moon;
+                    width: 40em;
+                    top: 10%;
+                    left: 26%;
+                    animation: moonriseTwo 5s ease-in-out;
+                }
 
                 >h2 {
                     text-align: center;
@@ -155,19 +121,10 @@ html {
                     font-size: 3em;
                 }
 
-                #second-moon {
-                    @extend %blue-moon;
-                    width: 40em;
-                    height: auto;
-                    position: fixed;
-                    top: 10%;
-                    left: 26%;
-                    animation: moonriseTwo 5s ease-in-out;
-                }
-
                 .card-row {
                     display: flex;
                     flex-direction: row;
+
                     .card-real {
                         @include m.cardGeneral;
                         height: auto;
@@ -198,10 +155,10 @@ html {
                         }
 
                         .real-text {
+                            @extend %f-twelve;
                             width: 90%;
                             padding: 1em;
                             margin: 2em;
-                            font-size: 12px;
                         }
                     }
                 }
@@ -216,11 +173,9 @@ html {
                 #third-moon {
                     @extend %blue-moon;
                     width: 47em;
-                    height: auto;
-                    position: fixed;
                     top: 4%;
                     left: 38%;
-                    animation : moonriseThree 10s ease-in-out;
+                    animation: moonriseThree 10s ease-in-out;
                 }
 
                 #road {
@@ -253,8 +208,6 @@ html {
             #fourth-moon {
                 @extend %blue-moon;
                 width: 40em;
-                height: auto;
-                position: fixed;
                 top: 5%;
                 left: 54%;
                 animation: moonriseFour 10s ease-in-out
@@ -266,17 +219,16 @@ html {
 
             #card-form {
                 @include m.cardGeneral;
-                padding: 1em 0 3.5em 0;
-                margin-bottom: 6em;
+                padding: 1em 0 1em 0;
+                margin-bottom: 1em;
 
                 >form {
                     display: grid;
                     flex-direction: column;
                     justify-content: center;
-                    text-align: center;
 
                     label {
-                        font-family: map-get(f.$fonts, cardFont);
+                        @extend %card-text;
                         margin-top: 0.4em;
                     }
 
@@ -285,10 +237,18 @@ html {
                     }
 
                     .form-square {
-                        width: 16em;
+                        width: 20em;
                         border: 1px solid map-get(c.$colors, 'lavander');
                         border-radius: 4px;
                         margin-top: 0.3em;
+                        font-family: map-get(f.$fonts, 'cardFont');
+                        font-size: 11px;
+
+                        &::placeholder {
+                            color: rgb(153, 148, 148);
+                            font-size: 10px;
+                            font-family: map-get(f.$fonts, 'cardFont');
+                        }
                     }
 
                     textarea {
@@ -296,8 +256,9 @@ html {
                     }
 
                     #contact-btn {
-                        margin-top: 2em;
                         @include m.allBtn;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
                     }
                 }
             }
@@ -326,7 +287,7 @@ html {
                     height: 14em;
 
                     >p {
-                        font-size: 15px;
+                        @extend %f-fifteen;
                         position: fixed;
                         justify-self: center;
                         top: 30%
@@ -373,8 +334,6 @@ html {
             #fifth-moon {
                 @extend %blue-moon;
                 width: 45em;
-                height: auto;
-                position: fixed;
                 top: 20%;
                 left: 72%;
                 animation: moonriseFive 10s ease-in-out;
@@ -386,6 +345,7 @@ html {
                 height: 30em;
 
                 >article {
+                    margin-top: 2em;
                     padding: 2em;
                 }
             }
@@ -394,6 +354,7 @@ html {
     }
 
     footer {
+        @include m.gradientBottom;
         border-top: 1px solid map-get(c.$colors, 'lavander');
         width: 100%;
         height: auto;
@@ -402,17 +363,32 @@ html {
         margin-top: auto;
         bottom: 0;
         position: fixed;
-        /*couleurs du footer*/
-        @include m.gradientBottom;
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
 
         a {
             @extend %links
         }
 
-        #legal {
-            font-size: 13px;
+        #link-pro {
+            font-size: 2em;
+            font-weight: lighter;
+
+            .fa-brands {
+                padding: 0.2em;
+            }
+        }
+
+        #legal-info {
+            display: flex;
+            flex-direction: column;
+            @extend %f-fifteen;
+            margin-top: 0.5em;
+
+            >span {
+                @extend %f-twelve;
+            }
         }
     }
 }
@@ -476,11 +452,13 @@ html {
                     display: flex !important;
                     flex-direction: column !important;
                 }
+
                 h2 {
                     text-align: center !important;
                 }
             }
         }
+
         #main-contacts {
             >#card-form {
                 padding: 1.5em !important;

@@ -40,7 +40,7 @@
 
 ## Sprint A :
 - Révision des priorités de la gestion de projet
-    - revoir l'ordre des sprints et, si besoin leur contenu ✓
+    - revoir l'ordre des sprints et, si besoin, leur contenu ✓
 - Construction du système de navigation 
     - gérer l'affichage dynamique des pages en html et js ✓
     -> Sprint 7
@@ -54,11 +54,11 @@
 - Page d'accueil
     - fonction de sélection de la carte voulue ✓
 - Page "réalisations"
-    - Boutons de slide show 
+    - Boutons de slide show (remis à plus tard)
 - Page formulaire de contact
-    - Vérification des contenus des champs du formulaire 
-    - Vérification de la validité de saisie de l'email
-    - Bouton submit de la page contact
+    - Vérification des contenus des champs du formulaire ✓
+    - Vérification de la validité de saisie de l'email ✓
+    - Bouton submit de la page contact ✓
 
 ## Sprint 8 : Style général
 - Création des feuilles SCSS font, colors, mixins ✓
@@ -83,7 +83,7 @@
 
 ## Sprint 11 : Accessibilité
 - Ajout de la balise ARIA ✓
-- Vérification du contraste des couleurs
+- Vérification du contraste des couleurs (remis à plus tard)
 
 ## Sprint 12 : Ajouts
 - Toute action notée comme devant être faite lors des retours
