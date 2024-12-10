@@ -87,11 +87,12 @@
 
 ## Sprint 12 : Ajouts
 - Toute action notée comme devant être faite lors des retours
-sur les sprints précédents
+sur les sprints précédents ✓
 
 ## Sprint 13 : Vérification
 - Vérification du code HTML ✓
 - Vérification du code SCSS ✓
-- Vérification du code JS
-- Vérification du responsive
-- Faire ajustements si nécessaire
+- Vérification du code JS ✓
+- Vérification du responsive ✓
+- Faire ajustements si nécessaire ✓
+- finalidations des documents et suppressions des fichiers inutiles ✓

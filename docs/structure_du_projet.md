@@ -4,7 +4,6 @@
 /projet
     /assets/
     /imgs/
-        /favicon.(ico|png)
     /logo/
     /fonts/
 /css/
