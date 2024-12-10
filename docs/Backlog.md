@@ -27,11 +27,11 @@
 | ID | Responsive                          | Haute | Fait | Sprint 9 |Sarah |
 | ID | SCSS-Animations                     | Haute | Fait | Sprint 10 |Sarah |
 | ID | Ajout de la balise ARIA             | Haute | Fait | Sprint 11 |Sarah |
-| ID | Vérification contraste              | Priorité | Statut | Sprint 11 |Sarah |
+| ID | Vérification contraste              | Moyenne | Statut | Sprint 11 |Sarah |
 | ID | Ajouts (si besoin)                  | Basse | Statut | Sprint 12 |Sarah |
-| ID | Vérification du code                | Priorité | Statut | Sprint 13 |Sarah |
-| ID | Vérification du responsive          | Priorité | Statut | Sprint 13 |Sarah |
-| ID | Ajustements si nécessaire           | Priorité | Statut | Sprint 13 |Sarah |
+| ID | Vérification du code                | Haute | Fait | Sprint 13 |Sarah |
+| ID | Vérification du responsive          | Haute | Fait | Sprint 13 |Sarah |
+| ID | Ajustements si nécessaire           | Moyenne | Partiel | Sprint 13 |Sarah |
 | ID | Réorganisation de la gestion de projet  | Haute | Fait | Sprint A |Sarah |
 | ID | Construction du système de navigation   | Haute | Fait | Sprint A |Sarah |
 | ID | Tavail sur le système d'afichage        | Haute | Fait | Sprint A |Sarah |

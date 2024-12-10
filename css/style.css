@@ -13,11 +13,26 @@
 html body #main-index #welcome #first-moon, html body #main-index #projects #second-moon, html body #main-index #resume #third-moon, html body #main-contacts #fourth-moon, html body #main-legal #fifth-moon {
   z-index: -10;
   opacity: 50%;
+  height: auto;
+  position: fixed;
 }
 
-html body header .nav-list > a, html footer a {
+html body header .navigation .nav-list > a, html footer a {
   color: #ede9e9;
   text-decoration: none;
+}
+
+html body .info-text, html body #main-contacts #card-form > form label {
+  font-family: "Lemonada";
+  color: #060c33;
+}
+
+html body #main-index #projects .card-row .card-real .real-text, html footer #legal-info > span {
+  font-size: 12px;
+}
+
+html body #main-contacts #modal-container #form-modal > p, html footer #legal-info {
+  font-size: 15px;
 }
 
 @keyframes moonriseOne {
@@ -85,9 +100,7 @@ html body {
 }
 html body .card-title {
   font-family: "Lemon";
-}
-html body .info-text {
-  font-family: "Lemonada";
+  color: #060c33;
 }
 html body header {
   position: sticky;
@@ -102,18 +115,15 @@ html body header .navigation {
   flex-direction: row;
   justify-items: center;
 }
-html body header .nav-list {
-  list-style-type: none;
-  padding: 1em;
-  margin-top: 1em;
-}
-html body header #logo-site {
+html body header .navigation #logo-site {
   width: 6em;
   height: auto;
   float: left;
 }
-html body header > div > a {
-  margin: 1em;
+html body header .navigation .nav-list {
+  list-style-type: none;
+  padding: 1em;
+  margin-top: 1em;
 }
 html body #main-index #welcome {
   margin-top: 3em;
@@ -125,9 +135,7 @@ html body #main-index #welcome > h1 {
 }
 html body #main-index #welcome #first-moon {
   width: 50em;
-  height: auto;
   margin: 0;
-  position: fixed;
   bottom: 0;
   left: 0;
   animation: moonriseOne 5s ease-in-out;
@@ -142,64 +150,25 @@ html body #main-index #welcome #card-welcome {
   float: right;
   margin-top: 12em;
   margin-right: 10em;
+  padding: 1em;
 }
-html body #main-index #welcome #dev-comp {
-  display: grid;
-  justify-items: flex-end;
-  margin-top: 3em;
-  margin-right: 4em;
-}
-html body #main-index #welcome #dev-comp > h2 {
-  margin-bottom: 1em;
-}
-html body #main-index #welcome #dev-comp #card-comp {
-  background-color: #ede9e9;
-  color: black;
-  border: 2px solid #7169e8;
-  border-radius: 0.4em;
-  box-shadow: 1px 1px #7169e8;
-  padding-left: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-self: end;
-  margin-right: 3em;
-  width: 30em;
-  height: 18em;
-}
-html body #main-index #welcome #dev-comp #card-comp > h3 {
-  text-align: center;
-  margin-top: 0.5em;
-}
-html body #main-index #welcome #dev-comp #card-comp #comp-list {
-  font-family: "Lemonada";
-  font-size: 12px;
-  margin-top: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-html body #main-index #welcome #dev-comp #card-comp #comp-list .radio {
-  padding-top: 10px;
-}
-html body #main-index #welcome #dev-comp #card-comp #comp-list > h4 {
-  font-size: 15px;
+html body #main-index #welcome #card-welcome > h3 {
+  margin-bottom: 0.5em;
 }
 html body #main-index #projects {
   margin-top: 5em;
-  margin-bottom: 3em;
+  margin-bottom: 10em;
+}
+html body #main-index #projects #second-moon {
+  width: 40em;
+  top: 10%;
+  left: 26%;
+  animation: moonriseTwo 5s ease-in-out;
 }
 html body #main-index #projects > h2 {
   text-align: center;
   margin-right: 4.5em;
   font-size: 3em;
-}
-html body #main-index #projects #second-moon {
-  width: 40em;
-  height: auto;
-  position: fixed;
-  top: 10%;
-  left: 26%;
-  animation: moonriseTwo 5s ease-in-out;
 }
 html body #main-index #projects .card-row {
   display: flex;
@@ -240,7 +209,6 @@ html body #main-index #projects .card-row .card-real .real-text {
   width: 90%;
   padding: 1em;
   margin: 2em;
-  font-size: 12px;
 }
 html body #main-index #resume {
   margin: 2.5em 0 5em 4em;
@@ -249,8 +217,6 @@ html body #main-index #resume {
 }
 html body #main-index #resume #third-moon {
   width: 47em;
-  height: auto;
-  position: fixed;
   top: 4%;
   left: 38%;
   animation: moonriseThree 10s ease-in-out;
@@ -286,8 +252,6 @@ html body #main-contacts {
 }
 html body #main-contacts #fourth-moon {
   width: 40em;
-  height: auto;
-  position: fixed;
   top: 5%;
   left: 54%;
   animation: moonriseFour 10s ease-in-out;
@@ -302,37 +266,48 @@ html body #main-contacts #card-form {
   border-radius: 0.4em;
   box-shadow: 1px 1px #7169e8;
   padding-left: 1em;
-  padding: 1em 0 3.5em 0;
-  margin-bottom: 6em;
+  padding: 1em 0 1em 0;
+  margin-bottom: 1em;
 }
 html body #main-contacts #card-form > form {
   display: grid;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
 html body #main-contacts #card-form > form label {
-  font-family: "Lemonada";
   margin-top: 0.4em;
 }
 html body #main-contacts #card-form > form .error-msg {
   margin-top: 0.4em;
 }
 html body #main-contacts #card-form > form .form-square {
-  width: 16em;
+  width: 20em;
   border: 1px solid #7169e8;
   border-radius: 4px;
   margin-top: 0.3em;
+  font-family: "Lemonada";
+  font-size: 11px;
+}
+html body #main-contacts #card-form > form .form-square::-moz-placeholder {
+  color: rgb(153, 148, 148);
+  font-size: 10px;
+  font-family: "Lemonada";
+}
+html body #main-contacts #card-form > form .form-square::placeholder {
+  color: rgb(153, 148, 148);
+  font-size: 10px;
+  font-family: "Lemonada";
 }
 html body #main-contacts #card-form > form textarea {
   height: 7em;
 }
 html body #main-contacts #card-form > form #contact-btn {
-  margin-top: 2em;
   border: 1px solid #1b15bE;
   border-radius: 4px;
   background-color: #4843d7;
   color: #ede9e9;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 html body #main-contacts #card-form > form #contact-btn:hover {
   filter: brightness(150%);
@@ -365,7 +340,6 @@ html body #main-contacts #modal-container #form-modal {
   height: 14em;
 }
 html body #main-contacts #modal-container #form-modal > p {
-  font-size: 15px;
   position: fixed;
   justify-self: center;
   top: 30%;
@@ -408,8 +382,6 @@ html body #main-legal h2 {
 }
 html body #main-legal #fifth-moon {
   width: 45em;
-  height: auto;
-  position: fixed;
   top: 20%;
   left: 72%;
   animation: moonriseFive 10s ease-in-out;
@@ -425,9 +397,11 @@ html body #main-legal #card-legal {
   height: 30em;
 }
 html body #main-legal #card-legal > article {
+  margin-top: 2em;
   padding: 2em;
 }
 html footer {
+  background: linear-gradient(to bottom, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
   border-top: 1px solid #7169e8;
   width: 100%;
   height: auto;
@@ -436,15 +410,22 @@ html footer {
   margin-top: auto;
   bottom: 0;
   position: fixed;
-  /*couleurs du footer*/
-  background: linear-gradient(to bottom, #0f07a5 5%, #150b81 25%, #160d5a 40%, #060c33 60%, #040820 80%, #010101 100%);
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
 }
-html footer #legal {
-  font-size: 13px;
+html footer #link-pro {
+  font-size: 2em;
+  font-weight: lighter;
 }
-
+html footer #link-pro .fa-brands {
+  padding: 0.2em;
+}
+html footer #legal-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+}
 @media only screen and (max-width: 430px) {
   body header > #nav-head {
     display: grid;

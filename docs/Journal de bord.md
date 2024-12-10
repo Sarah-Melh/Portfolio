@@ -194,7 +194,7 @@ les liens depuis les pages indépendantes
 - Si besoin: media queries en scss 
 
 ### Ce qui a été
-- L'ensemble s'est déroulé correctement
+- pour le format téléphone, l'ensemble s'est déroulé correctement
 
 ### Ce qui s'est mal passé
 - bootstrap répondait très mal
@@ -202,6 +202,7 @@ les liens depuis les pages indépendantes
         le responsive est correct
 - lors de la vérification des media queries je me suis aperçue que la page dynamique 'parcours' était visible  
     -> **résolution:** Je n'ai pas trouvé de solution
+- par manque de temps, le responsive tablette n'est pas au point
 
 ---------------------
 -------------------
@@ -221,6 +222,18 @@ les liens depuis les pages indépendantes
 - j'ai un peu cherché comment faire 
 - le problème de responsive s'est répercuté sur l'animation la lune apparaît deux fois  
     -> **résolution:** Je n'ai pas trouvé de solution
+
+---------------------
+-------------------
+
+## Sprint 12 : Ajouts
+- Toute action notée comme devant être faite lors des retours
+sur les sprints précédents
+
+### SCSS
+- factorisation partielle du code (manque de temps)
+- ajout de style oublié lors des sprints précédents et ajustements
+
 
 ---------------------
 -------------------
