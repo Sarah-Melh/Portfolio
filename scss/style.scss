@@ -1,0 +1,478 @@
+@use "sass:map";
+@use '_colors.scss' as c;
+@use '_fonts.scss' as f;
+@use '_extend.scss';
+@use '_mixins.scss' as m;
+@use '_keyframes' as k;
+
+
+html {
+
+    // body
+    body {
+
+        @include m.gradientBottom;
+        margin: 0;
+        min-height: 100vh;
+        box-sizing: border-box;
+        font-family: map-get(f.$fonts, generalFont);
+        color: map-get(c.$colors, 'light');
+        background-attachment: fixed;
+
+        // commun aux différentes pages
+        .card-title {
+            font-family: map-get(f.$fonts, titleFont);
+            color: map-get(c.$colors, 'dark');
+        }
+
+        .info-text {
+            @extend %card-text;
+        }
+
+        // header
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid map-get(c.$colors, 'lavander');
+            /*couleurs de fond*/
+            background: linear-gradient(to top,
+                    #0f07a5 5%,
+                    #150b81 25%,
+                    #160d5a 40%,
+                    #060c33 60%,
+                    #040820 80%,
+                    #010101 100%);
+
+            .navigation {
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+
+                #logo-site {
+                    width: 6em;
+                    height: auto;
+                    float: left;
+                }
+
+                .nav-list {
+                    list-style-type: none;
+                    padding: 1em;
+                    margin-top: 1em;
+
+                    >a {
+                        @extend %links;
+                    }
+                }
+            }
+        }
+
+        // main
+        #main-index {
+
+            // acceuil
+            #welcome {
+                margin-top: 3em;
+                margin-left: 4em;
+
+                >h1 {
+                    text-align: center;
+                    font-size: 5em;
+                }
+
+                #first-moon {
+                    @extend %blue-moon;
+                    width: 50em;
+                    margin: 0;
+                    bottom: 0;
+                    left: 0;
+                    animation: moonriseOne 5s ease-in-out;
+                }
+
+                #card-welcome {
+                    @include m.cardGeneral;
+                    float: right;
+                    margin-top: 12em;
+                    margin-right: 10em;
+                    padding: 1em;
+                    >h3 {
+                        // margin-top: 0.2em;
+                        margin-bottom: 0.5em;
+                    }
+                }
+            }
+
+            // réalisations
+            #projects {
+                margin-top: 5em;
+                margin-bottom: 10em;
+
+                #second-moon {
+                    @extend %blue-moon;
+                    width: 40em;
+                    top: 10%;
+                    left: 26%;
+                    animation: moonriseTwo 5s ease-in-out;
+                }
+
+                >h2 {
+                    text-align: center;
+                    margin-right: 4.5em;
+                    font-size: 3em;
+                }
+
+                .card-row {
+                    display: flex;
+                    flex-direction: row;
+
+                    .card-real {
+                        @include m.cardGeneral;
+                        height: auto;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2em;
+
+                        >h4 {
+                            text-align: center;
+                            margin-bottom: 1em;
+                            margin-top: 0.5em;
+                        }
+
+                        .image-container {
+                            width: 90%;
+                            height: 10em;
+                            margin-left: 0.5em;
+                            display: flex;
+
+                            .real-img {
+                                border: 1px solid map-get(c.$colors, 'lavander');
+                                border-radius: 3px;
+                                margin: 0;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        .real-text {
+                            @extend %f-twelve;
+                            width: 90%;
+                            padding: 1em;
+                            margin: 2em;
+                        }
+                    }
+                }
+            }
+
+            // page cv
+            #resume {
+                margin: 2.5em 0 5em 4em;
+                display: flex;
+                flex-direction: row;
+
+                #third-moon {
+                    @extend %blue-moon;
+                    width: 47em;
+                    top: 4%;
+                    left: 38%;
+                    animation: moonriseThree 10s ease-in-out;
+                }
+
+                #road {
+                    >h2 {
+                        font-size: 3em;
+                    }
+
+                    #card-resume {
+                        @include m.cardGeneral;
+                        margin-top: 2em;
+                    }
+                }
+
+                #resume-img {
+                    @include m.cardGeneral;
+                    margin-left: 23em;
+                    width: 30em;
+                    height: 40em;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        // Page de contact
+        #main-contacts {
+            margin-top: 3em;
+            display: grid;
+            justify-items: center;
+
+            #fourth-moon {
+                @extend %blue-moon;
+                width: 40em;
+                top: 5%;
+                left: 54%;
+                animation: moonriseFour 10s ease-in-out
+            }
+
+            >h2 {
+                margin-bottom: 1em;
+            }
+
+            #card-form {
+                @include m.cardGeneral;
+                padding: 1em 0 1em 0;
+                margin-bottom: 1em;
+
+                >form {
+                    display: grid;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    label {
+                        @extend %card-text;
+                        margin-top: 0.4em;
+                    }
+
+                    .error-msg {
+                        margin-top: 0.4em;
+                    }
+
+                    .form-square {
+                        width: 20em;
+                        border: 1px solid map-get(c.$colors, 'lavander');
+                        border-radius: 4px;
+                        margin-top: 0.3em;
+                        font-family: map-get(f.$fonts, 'cardFont');
+                        font-size: 11px;
+
+                        &::placeholder {
+                            color: rgb(153, 148, 148);
+                            font-size: 10px;
+                            font-family: map-get(f.$fonts, 'cardFont');
+                        }
+                    }
+
+                    textarea {
+                        height: 7em;
+                    }
+
+                    #contact-btn {
+                        @include m.allBtn;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+            // modale
+            #modal-container {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+                #form-modal {
+                    @include m.cardGeneral;
+                    font-family: map-get(f.$fonts, 'cardFont');
+                    background-color: #ede9e9e7;
+                    position: absolute;
+                    display: grid;
+                    top: 28%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 32em;
+                    height: 14em;
+
+                    >p {
+                        @extend %f-fifteen;
+                        position: fixed;
+                        justify-self: center;
+                        top: 30%
+                    }
+
+                    .modal-btn {
+                        @include m.allBtn;
+                        cursor: pointer;
+                        position: fixed;
+                        justify-self: center;
+                        bottom: 0;
+                        bottom: 15%;
+                        padding: 0.2em;
+                    }
+
+                    #valid-btn {
+                        left: 30%;
+                    }
+
+                    #annul-btn {
+                        right: 30%;
+                        background-color: map-get(c.$colors, 'light-lavand');
+                        color: #f7f5f5;
+
+                        &:hover {
+                            filter: darkness(150%);
+                            color: map-get(c.$colors, 'dusk');
+                        }
+                    }
+                }
+            }
+        }
+
+        // Mentions légales
+        #main-legal {
+            margin-top: 3em;
+            display: grid;
+            justify-items: center;
+
+            h2 {
+                text-align: center
+            }
+
+            #fifth-moon {
+                @extend %blue-moon;
+                width: 45em;
+                top: 20%;
+                left: 72%;
+                animation: moonriseFive 10s ease-in-out;
+            }
+
+            #card-legal {
+                @include m.cardGeneral;
+                margin-top: 2em;
+                height: 30em;
+
+                >article {
+                    margin-top: 2em;
+                    padding: 2em;
+                }
+            }
+        }
+
+    }
+
+    // footer
+    footer {
+        @include m.gradientBottom;
+        border-top: 1px solid map-get(c.$colors, 'lavander');
+        width: 100%;
+        height: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: auto;
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        a {
+            @extend %links
+        }
+
+        #link-pro {
+            font-size: 2em;
+            font-weight: lighter;
+
+            .fa-brands {
+                padding: 0.2em;
+            }
+        }
+
+        #legal-info {
+            display: flex;
+            flex-direction: column;
+            @extend %f-fifteen;
+            margin-top: 0.5em;
+
+            >span {
+                @extend %f-twelve;
+            }
+        }
+    }
+}
+
+// media query
+@media only screen and (max-width: 430px) {
+    body {
+        header {
+            >#nav-head {
+                display: grid;
+                justify-content: center;
+
+                >.navigation {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .nav-list {
+                        margin: 0;
+                        padding: 0.3em;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        #main-index {
+            #welcome {
+                display: grid;
+                justify-content: center;
+                margin-left: 0 !important;
+
+                >h1 {
+                    margin-bottom: 0;
+                }
+
+                >#card-welcome {
+                    margin-top: 2em !important;
+                    margin-right: 0 !important;
+                }
+            }
+
+            #resume {
+                display: flex !important;
+                flex-direction: column !important;
+                margin-left: 1em !important;
+
+                >#road>h2 {
+                    text-align: center;
+                }
+
+                #resume-img {
+                    margin-left: 2em !important;
+                    margin-top: 2em;
+                    width: 19em !important;
+                    height: auto;
+                }
+            }
+
+            #projects {
+                .card-row {
+                    display: flex !important;
+                    flex-direction: column !important;
+                }
+
+                h2 {
+                    text-align: center !important;
+                }
+            }
+        }
+
+        #main-contacts {
+            >#card-form {
+                padding: 1.5em !important;
+                margin-bottom: 10em !important;
+            }
+        }
+
+        #main-legal {
+            #card-legal {
+                margin-bottom: 12em !important;
+                height: auto !important;
+            }
+        }
+    }
+}

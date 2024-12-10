@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <!-- <link rel="stylesheet" href="../css/zoning.css"> -->
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/frameworks/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/frameworks/bootstrap.min.css">
+    <!-- <script src="../js/frameworks/vue.global.prod.js"></script> -->
+    <script src="../js/frameworks/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav id="nav-head">
+            <ul class="navigation">
+                <img id="logo-site" src="../assets/logo/Logo.png" alt="logo du site">
+                <li class="nav-list">
+                    <a href="../index.html#welcome">Accueil</a>
+                </li>
+                <li class="nav-list">
+                    <a href="../index.html#projects">Réalisations</a>
+                </li>
+                <li class="nav-list">
+                    <a href="../index.html#resume">Parours</a>
+                </li>
+                <li class="nav-list">
+                    <a href="../includes/contacts.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="container" id="main-contacts">
+        <img id="fourth-moon" class="moon" src="../assets/imgs/moon.png" alt="lune">
+        <h2>Contactez-moi</h2>
+        <div id="card-form" class="col-sm-10 col-md-8 col-lg-4">
+            <form id="form-contact" action="">
+                <label for="name" aria-label="nom">Nom</label>
+                <input class="form-square" type="text" name="name" id="name" placeholder="Entrez votre nom" aria-label="Entrez votre nom">
+                <p class="error-msg" id="error-name"></p>
+                <label for="firstname" aria-label="prénom">Prénom</label>
+                <input class="form-square" type="text" name="firstname" id="firstname" placeholder="Entrez votre prénom" aria-label="Entrez votre prénom">
+                <p class="error-msg" id="error-firstname"></p>
+                <label for="email" aria-label="email">Email</label>
+                <input class="form-square" type="text" name="email" id="email" placeholder="Entrez votre email" aria-label="Entrez votre email">
+                <p class="error-msg" id="error-email"></p>
+                <label for="message" aria-label="message">Message</label>
+                <textarea class="form-square" name="message" id="message" placeholder="Entrez votre message" aria-label="Entrez votre message"></textarea>
+                <p class="error-msg" id="error-message"></p>
+                <button id="contact-btn" type="submit" class="btn" aria-label="Envoyer votre message">Envoyer</button>
+            </form>
+        </div>
+        <div id="modal-container" aria-hidden="true">
+            <div id="form-modal">
+                <p aria-label="confirmation de l'envoi du message">Voulez vous confirmer l'envoi de votre formulaire?</p>
+                <button class="modal-btn" type="submit" id="valid-btn" aria-label="valider l'envoi">Valider</button>
+                <button class="modal-btn" type="dismiss-modal" id="annul-btn" aria-label="annuler l'envoi">Annuler</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div id="link-pro">
+            <a href="https://github.com/Sarah-Melh?tab=repositories"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div id="legal-info">
+            <a href="../includes/mentions_legales.html">Mentions légales</a>
+            <span><i class="fa-regular fa-copyright"></i> Copyright 2024 Sarah Melhaa</span>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>

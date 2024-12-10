@@ -1,0 +1,34 @@
+@use "sass:map";
+@use '_colors.scss' as c;
+@use '_fonts.scss' as f;
+
+@mixin cardGeneral {
+    background-color: map-get(c.$colors, 'light');
+    color: black;
+    border: 2px solid map-get(c.$colors, 'lavander');
+    border-radius: 0.4em;
+    box-shadow: 1px 1px map-get(c.$colors, 'lavander');
+    padding-left: 1em;
+}
+
+@mixin gradientBottom {
+    background: linear-gradient(to bottom,
+            #0f07a5 5%,
+            #150b81 25%,
+            #160d5a 40%,
+            #060c33 60%,
+            #040820 80%,
+            #010101 100%);
+}
+
+@mixin allBtn {
+    border: 1px solid map-get(c.$colors, 'nightblue');
+    border-radius: 4px;
+    background-color: map-get(c.$colors, 'dusk');
+    color: map-get(c.$colors, 'light');
+    font-family: map-get(f.$fonts, 'lemonada');
+    &:hover {
+        filter: brightness(150%);
+        color: map-get(c.$colors, 'dark');
+    }
+}

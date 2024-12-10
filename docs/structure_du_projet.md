@@ -1,0 +1,51 @@
+# Structure du projet  
+
+```
+/projet
+    /assets/
+    /imgs/
+    /logo/
+    /fonts/
+/css/
+    /frameworks/
+    /webfonts/
+    /normalize.css
+    /normalize.css.map
+    /normalize.min.css
+    /normalize.min.css.map
+    /style.css
+    /style.css.map
+    /style.min.css
+    /style.min.css.map
+    /zonning.css 
+    /zonning.css.map
+    /zonning.min.css (actif seulement durant le dev)
+    /zonning.min.css.map
+/scss/
+    /_colors.scss
+    /_fonts.scss
+    /_keyframes.scss
+    /_mixins.scss
+    /_extends.scss
+    /normalize.scss
+    /zoning.scss
+    /style.scss
+/js/
+    /frameworks/
+    /app.js (ou main.js)
+/docs/
+    /backlog.md
+    /journal_de_bord.md
+    /pseudo-code.md
+    /sprints.md
+    /structure_du_projet.md
+    /user-stories.md
+    /use-ai.md
+    /wireframes.(png|jpg|pdf)
+    /prototypes.(png|jpg|pdf)
+/includes/
+    /contacts.html
+    /mentions_legales.html
+/index.html
+/README.md
+```

@@ -1,0 +1,67 @@
+* {
+  margin: 2px;
+}
+
+header {
+  border: solid 2px red;
+}
+
+main {
+  border: solid 2px green;
+}
+
+footer {
+  border: solid 2px blue;
+}
+
+nav {
+  border: solid 2px purple;
+}
+
+a {
+  border: solid 2px chartreuse;
+}
+
+img {
+  border: solid 2px black;
+}
+
+i {
+  border: solid 2px hotpink;
+}
+
+h1 {
+  border: solid 2px violet;
+}
+
+h2 {
+  border: solid 2px cyan;
+}
+
+h3 {
+  border: solid 2px forestgreen;
+}
+
+section {
+  border: solid 2px darkorange;
+}
+
+article {
+  border: solid 2px royalblue;
+}
+
+form {
+  color: orange;
+}
+
+ul {
+  border: solid 2px teal;
+}
+
+li {
+  border: solid 2px dodgerblue;
+}
+
+table {
+  border: solid 2px darkslategrey;
+}/*# sourceMappingURL=zoning.css.map */

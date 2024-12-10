@@ -1,0 +1,27 @@
+@use '_colors.scss' as c;
+@use '_fonts.scss' as f;
+
+%blue-moon {
+    z-index: -10;
+    opacity: 50%;
+    height: auto;
+    position: fixed;
+}
+
+%links {
+    color: map-get(c.$colors, light);
+    text-decoration: none;
+}
+
+%card-text {
+    font-family: map-get(f.$fonts, cardFont);
+    color: map-get(c.$colors, 'dark');
+}
+
+%f-twelve {
+    font-size: 12px;
+}
+
+%f-fifteen {
+    font-size: 15px;
+}
