@@ -90,8 +90,8 @@
 sur les sprints précédents
 
 ## Sprint 13 : Vérification
-- Vérification du code HTML
-- Vérification du code SCSS
+- Vérification du code HTML ✓
+- Vérification du code SCSS ✓
 - Vérification du code JS
 - Vérification du responsive
 - Faire ajustements si nécessaire

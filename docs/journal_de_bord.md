@@ -233,7 +233,25 @@ sur les sprints précédents
 ### SCSS
 - factorisation partielle du code (manque de temps)
 - ajout de style oublié lors des sprints précédents et ajustements
+- minification du fichier scss et réglages de responsive
 
 
 ---------------------
 -------------------
+## A faire plus tard
+- insertion des textes de présentation des projets
+- liens vers les projets présents sur github
+- lien de téléchargement du dv
+- animations supplémentaires
+- création de carousel pour les cartes des projets
+- responsive tablette et amélioration génrale du responsive
+- achever l'aria-label et faire la vérificaiton du contraste
+- création de carte de compétences 
+- dynamiser l'affichage avec des framerwork
+- alléger le code en ayant moins (plus) de html
+
+## Remarques 
+- Je n'ai vu qu'à la fin que tous les fichiers css devaient être passé en scss  
+- le système de minificationque j'ai employé n'a pas permis de supprimer les fichiers classiques
+
+
