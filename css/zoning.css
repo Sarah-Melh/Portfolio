@@ -1,71 +1,67 @@
 * {
-    margin: 2px;
+  margin: 2px;
 }
+
 header {
-    border: solid 2px red;
+  border: solid 2px red;
 }
 
 main {
-    border: solid 2px green;
+  border: solid 2px green;
 }
 
 footer {
-    border: solid 2px blue;
+  border: solid 2px blue;
 }
 
 nav {
-    border: solid 2px purple;
+  border: solid 2px purple;
 }
 
 a {
-    border: solid 2px chartreuse;
+  border: solid 2px chartreuse;
 }
 
 img {
-    border: solid 2px black;
+  border: solid 2px black;
 }
 
 i {
-    border: solid 2px hotpink;
+  border: solid 2px hotpink;
 }
 
 h1 {
-    border: solid 2px violet;
+  border: solid 2px violet;
 }
 
 h2 {
-    border: solid 2px cyan;
+  border: solid 2px cyan;
 }
 
 h3 {
-    border: solid 2px forestgreen;
+  border: solid 2px forestgreen;
 }
 
 section {
-    border: solid 2px darkorange;
+  border: solid 2px darkorange;
 }
 
 article {
-    border: solid 2px royalblue;
+  border: solid 2px royalblue;
 }
 
 form {
-    color: orange;
+  color: orange;
 }
 
 ul {
-    border: solid 2px teal;
+  border: solid 2px teal;
 }
 
 li {
-    border: solid 2px dodgerblue;
+  border: solid 2px dodgerblue;
 }
 
 table {
-    border: solid 2px darkslategrey;
-}
-
-
-
-
-
+  border: solid 2px darkslategrey;
+}/*# sourceMappingURL=zoning.css.map */
