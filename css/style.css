@@ -476,5 +476,10 @@ html footer #legal-info {
   }
   body #main-contacts > #card-form {
     padding: 1.5em !important;
+    margin-bottom: 10em !important;
+  }
+  body #main-legal #card-legal {
+    margin-bottom: 12em !important;
+    height: auto !important;
   }
 }/*# sourceMappingURL=style.css.map */
