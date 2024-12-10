@@ -73,8 +73,6 @@ Résolu facilement.
 - Aucun problème sur cette phase
 - ajout d'une petite carte de texte
 
-### Ce qui s'est mal passé
-- 
 
 -------
 -----
@@ -86,8 +84,6 @@ Résolu facilement.
 ### Ce qui a été
 - aucun problème
 
-### Ce qui s'est mal passé
-- 
 
 ---------------------
 -------------------
@@ -98,9 +94,7 @@ Résolu facilement.
 - Carte des mentions légales
 
 ### Ce qui a été
--aucun problème
-
-### Ce qui s'est mal passé
+- aucun problème
 
 ---------------------
 -------------------
@@ -235,6 +229,9 @@ sur les sprints précédents
 - ajout de style oublié lors des sprints précédents et ajustements
 - minification du fichier scss et réglages de responsive
 
+## Sprint 13 : Vérification
+- finalidations des documents et suppressions des fichiers inutiles
+- la plus grande partie de ce sprint à été faite pendant le précédant
 
 ---------------------
 -------------------
@@ -250,8 +247,22 @@ sur les sprints précédents
 - dynamiser l'affichage avec des framerwork
 - alléger le code en ayant moins (plus) de html
 
+### Oublis importants
+- wireframe
+- lien de téléchargement du cv
+
 ## Remarques 
 - Je n'ai vu qu'à la fin que tous les fichiers css devaient être passé en scss  
 - le système de minificationque j'ai employé n'a pas permis de supprimer les fichiers classiques
+
+## Retours personnels sur l'expérience :
+J'ai perdu beaucoup de temps sur la navigation dynamique, ce qui à perturbé la gestion de projet
+que j'avais mise en place.
+J'ai beaucoup de mal à rattraper le retard. D'ailleurs, je n'ai pas pu faire tout ce que j'aurai
+souhaité et je me suis rendue compte que j'avais oublié certaines chose.
+
+Malgré tout, je reste assez contente du travail accompli.
+Je suis également très fière d'avoir réussi la fonction de navigation dynamique (malgré le soucis
+relevé plus haut).
 
 
