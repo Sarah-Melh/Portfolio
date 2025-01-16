@@ -38,4 +38,3 @@ volumes:
 networks:
   portfolio_network:
     driver: bridge 
-  
